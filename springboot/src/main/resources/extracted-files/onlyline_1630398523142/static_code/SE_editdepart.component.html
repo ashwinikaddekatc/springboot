@@ -1,0 +1,40 @@
+"<div class=\"container\">" + "\r\n" + 
+"    <div class=\"section\">" + "\r\n" + 
+"        <p> Edit form </p>" + "\r\n" + 
+"    </div>" + "\r\n" + 
+"    <br />" + "\r\n" + 
+"    <form (ngSubmit)=\"onSubmit()\">" + "\r\n" + 
+"        <div class=\"clr-row\">" + "\r\n" + 
+"            <div class=\"clr-col-md-4 clr-col-sm-12\">" + "\r\n" + 
+"                <label >dname</label>" + "\r\n" + 
+"                <input type=\"text\" [(ngModel)]=\"depart.dname\" id=\"main_menu_name\" name=\"dname\"  placeholder=\"Enter Name\" class=\"clr-input\">" + "\r\n" + 
+"                    <br>" + "\r\n" + 
+"            </div>" + "\r\n" + 
+"            <div class=\"clr-col-md-4 clr-col-sm-12\">" + "\r\n" + 
+"                <label >Dhead</label>" + "\r\n" + 
+"                <input type=\"text\" id=\"main_menu_action_name\" name=\"dhead\"  class=\"clr-input\" [(ngModel)]=\"depart.dhead\"" + "\r\n" + 
+"                    placeholder=\"Enter \" class=\"clr-input\">" + "\r\n" + 
+"                    <br>" + "\r\n" + 
+"            </div>" + "\r\n" + 
+"" + "\r\n" + 
+"            <div class=\"clr-col-md-4 clr-col-sm-12\">" + "\r\n" + 
+"                <label >Contact no</label>" + "\r\n" + 
+"                <input class=\"clr-input\" id=\"main_menu_icon\" type=\"number\"  class=\"clr-input\" name=\"dcontact\" [(ngModel)]=\"depart.dcontact\" >" + "\r\n" + 
+"                <br>" + "\r\n" + 
+"            </div>" + "\r\n" + 
+"                <br>" + "\r\n" + 
+"            <div class=\"clr-col-md-4 clr-col-sm-12\">" + "\r\n" + 
+"                <label >Employees </label>" + "\r\n" + 
+"                <input id=\"main_menu_icon\" type=\"number\" name=\"no_ofEmp\"  class=\"clr-input\" placeholder=\"Enter icon\"" + "\r\n" + 
+"                    [(ngModel)]=\"depart.no_ofEmp\" class=\"clr-input\">" + "\r\n" + 
+"                    <br>" + "\r\n" + 
+"            </div>" + "\r\n" + 
+"        </div>" + "\r\n" + 
+"        <br>" + "\r\n" + 
+"        <div class=\"clr-row\">" + "\r\n" + 
+"            " + "\r\n" + 
+"            <teacher-edit-extension [(teacherExtension)]=\"depart\"></teacher-edit-extension>" + "\r\n" + 
+"        </div>" + "\r\n" + 
+"        <button type=\"submit\" form-control class=\"btn btn-primary\">UPDATE</button>" + "\r\n" + 
+"    </form>" + "\r\n" + 
+"</div>" 

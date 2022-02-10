@@ -1,0 +1,32 @@
+<div class="container">
+    <h3 CLASS="center"><b>UPDATE REPORT </b></h3>
+    <br />
+
+    <!-- entry form-->
+    <form  (ngSubmit)="buildReport()">
+      <div class="clr-row">
+        <div class="clr-col-md-4 clr-col-sm-12">
+            <label for="tags">Report Name</label>
+            <input id="report_name" type="text" name="report_name" [(ngModel)]="project.report_name" placeholder="Enter tags" class="clr-input">
+         </div>
+
+        <div class="clr-col-md-4 clr-col-sm-12">
+          <label for="tags">Description</label>
+          <input id="description" type="text" name="description" [(ngModel)]="project.description" placeholder="Enter Description" class="clr-input">
+        </div>
+
+        <div class="clr-col-md-4 clr-col-sm-12">
+          <label for="file">Report Tags</label>
+          <input id="report_tags" type="text" name="report_tags" placeholder="Enter tags"  [(ngModel)]="project.reportTags" class="clr-input">
+        </div>
+      </div> <!-- end row -->
+      <br>
+      <div class="center">
+        <button type="submit" class="btn btn-primary" [disabled]="!entryForm.valid">SAVE AND NEXT</button>
+        <button type="button" (click)="buildReport()" class="btn btn-primary" [disabled]="!entryForm.valid">BUILD REPORT</button>
+
+      </div>
+
+    </form>
+
+  </div>

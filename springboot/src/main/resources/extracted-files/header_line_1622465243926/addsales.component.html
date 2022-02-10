@@ -1,0 +1,92 @@
+<div class="container">
+  <h3 class="center"><b>ENTRY FORM</b></h3>
+
+
+  <div>
+    <a style=" display: block;margin-left: 90%;" [routerLink]="['../../extension/all']">
+      <clr-icon shape="airplane" size="32"></clr-icon>
+    </a>
+  </div>
+
+
+  <!-- Header form start -->
+  <br />
+
+  <div class="section">
+    <p> Header </p>
+  </div>
+  <!-- entry form-->
+  <section>
+
+    <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+
+      <div class="clr-row" style="height: fit-content;">
+
+
+        <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+          <div> <label for="menu_name">sales Name</label></div>
+          <input id="menu_name" type="text" style="width: fit-content;" formControlName="afname" placeholder="Enter Name"
+            class="clr-input">
+        </div>
+        
+        <div class="clr-col-md-4 clr-col-sm-12">
+          <label for="description">department</label>
+          <input id="description" type="text" formControlName="lname" placeholder="Enter  .."
+            class="clr-input">
+        </div>
+
+
+        <!-- EXTENSION FIELDS START -->
+        <teacher-add-extension [extensionForm]="entryForm"></teacher-add-extension>
+        <!-- EXTENSION FIELDS END-->
+
+      </div>
+      <br>
+
+
+      <div class="section">
+        <p> Lines Details</p>
+      </div>
+
+
+      <div class="clr-row">
+        <div class="clr-col-lg-12">
+          <table class="table" style="width:100%;" formArrayName="book">
+            <thead>
+              <tr>
+                
+                <th class="left" style="width:125px;">Bname</th>
+                <th class="left" style="width:125px;">Btitle</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of controls; let i=index" [formGroupName]="i">
+               
+                <td class="left">
+                  <input colspan="2" type="text" formControlName="bname" class="clr-input" placeholder="Enter name" />
+                </td>
+
+                <td class="left">
+                  <input colspan="2" type="text" formControlName="btitle" class="clr-input" placeholder="Enter name" />
+                </td>
+
+                <td style="width:40px;">
+                  <a *ngIf="controls.length > 1" (click)="onRemoveLines(i)">
+                    <clr-icon shape="trash" class="is-error"></clr-icon>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            <button type="button" class="btn btn-primary button1" (click)="onAddLines()">
+              <clr-icon shape="plus"></clr-icon>
+            </button>
+          </table>
+        </div>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary" [disabled]="!entryForm.valid">SUBMIT</button>
+    </form>
+
+  </section>
+</div>

@@ -1,0 +1,29 @@
+<div class="read-only-pg pad-16">
+    <h3>SALES UPDATE FORM</h3>
+    <br />
+
+    <section class="form-block" style="margin-top:32px">
+        <form (ngSubmit)="onSubmit()">
+            <table>
+                <tr>
+                    <td style="width:125px;">Name: </td>
+                    <td><input colspan="2" type="text" name="name" [(ngModel)]="student.name" style="width:120px"></td>
+                </tr>
+                <tr>
+                    <td>Depertment: </td>
+                    <td colspan="2"><input type="text" name="depertment" [(ngModel)]="student.department"> </td>
+                </tr>
+                <tr>
+                    <td>DOJ:</td>
+                    <td colspan="2"><input type="date" name="joining_date" [(ngModel)]="student.joining_date"> </td>
+                </tr>
+                <tr>
+                    <td>Status:</td>
+                    <td colspan="2"><input type="text" name="status" [(ngModel)]="student.status"> </td>
+                </tr>
+            </table>
+            <br>
+            <button type="submit" form-control class="btn btn-primary">UPDATE</button>
+        </form>
+    </section>
+</div>

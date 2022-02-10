@@ -1,0 +1,112 @@
+﻿
+html > body #headerbg
+{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #2A4E77;
+    text-align: center;
+    position: fixed;
+    color: #ffffff;
+    /*padding-top: 10px;*/
+    height: 40px;
+}
+
+html > body #omfysheader
+{
+    float: left;
+    vertical-align: middle;
+    left: 2px;
+    top: 5px;
+    position: fixed;
+}
+
+html > body #headerText
+{
+    float: left;
+    font-size:larger;
+	font-weight: normal;
+	font-family: helvetica;
+    left:50px;
+    position: fixed;
+    
+}
+
+html > body #footerbg
+{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    background: #2A4E77;
+    color: White;
+	font-size:small;
+    
+}
+
+html > body #content
+{
+    /*box-shadow: inset 0px 0px 5px 0px  rgba(0, 0, 0, 0.5), 0px 0px 10px 0px rgba(255,255,255,0.9);
+    /*box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.5), 0px 0px 6px 0px rgba(255,255,255,0.9);*/
+    /*background: -moz-linear-gradient(top,white,gray) background;*/
+    float: left;
+    height: 530px;
+    /*margin: 0 auto;*/
+    margin:0px 0px 0px 206px;
+    overflow: auto;
+    /*padding-left: 15%;
+    padding-top:15%;*/
+    position: fixed;
+
+    width: 85%;
+}
+
+html > /**/ body .btn
+{
+    
+   -moz-box-shadow: 0px 0px 0px 10px #bee2f9;
+	box-shadow: 0 0px 0px 0px -50px black;
+	 background: -moz-linear-gradient(center top , rgb(67, 135, 253), rgb(70, 131, 234)) repeat scroll 0% 0% transparent;
+    color: #FFFFFF;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b8ee', endColorstr='#468ccf',GradientType=0);
+	background-color:#63b8ee;
+	display:inline-block;
+	color:White;
+	cursor:pointer;
+	font-family:helvetica;
+	font-size:15px;
+	font-weight:normal;
+
+	text-decoration:none;
+	text-shadow:0px 1px 0px #7cacde;
+	width:auto;
+    height:auto;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    margin: 2px 0px 0px 10px;
+    padding: 2px 1px 2px 1px;
+    
+}
+
+html > body .btn:hover{
+
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#468ccf', endColorstr='#63b8ee',GradientType=0);
+	background:#0066CC;
+}
+html > body .btn:active{
+	position:relative;
+	top:1px;
+	background-color:#468ccf;
+}
+#header
+{
+    width:100%;
+    height:44px;
+    position:relative;
+}
+#headerMenus
+{
+    width:100%;
+    height:40px;
+    position:static;
+}

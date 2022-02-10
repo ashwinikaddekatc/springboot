@@ -1,0 +1,180 @@
+
+<definition name="Robuitest_t_grid" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Robuitest_t_grid.jsp"/>
+</definition>
+<definition name="Robuitest_t_view" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Robuitest_t_view.jsp"/>
+</definition>
+<definition name="Robuitest_t_update" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Robuitest_t_update.jsp"/>
+</definition>
+<definition name="Robuitest_t_readonly" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Robuitest_t_readonly.jsp"/>
+</definition>
+
+
+<definition name="Justforfun_t_grid" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_grid.jsp"/>
+</definition>
+<definition name="Justforfun_t_view" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_view.jsp"/>
+</definition>
+<definition name="Justforfun_t_update" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_update.jsp"/>
+</definition>
+<definition name="Justforfun_t_readonly" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_readonly.jsp"/>
+</definition>
+
+
+<definition name="Mod_2_ui_t_grid" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/RObmod_2/Mod_2_ui_t_grid.jsp"/>
+</definition>
+<definition name="Mod_2_ui_t_view" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/RObmod_2/Mod_2_ui_t_view.jsp"/>
+</definition>
+<definition name="Mod_2_ui_t_update" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/RObmod_2/Mod_2_ui_t_update.jsp"/>
+</definition>
+<definition name="Mod_2_ui_t_readonly" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/RObmod_2/Mod_2_ui_t_readonly.jsp"/>
+</definition>
+
+
+<definition name="Justforfun_t_grid" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_grid.jsp"/>
+</definition>
+<definition name="Justforfun_t_view" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_view.jsp"/>
+</definition>
+<definition name="Justforfun_t_update" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_update.jsp"/>
+</definition>
+<definition name="Justforfun_t_readonly" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_readonly.jsp"/>
+</definition>
+
+
+<definition name="Justforfun_t_grid" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_grid.jsp"/>
+</definition>
+<definition name="Justforfun_t_view" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_view.jsp"/>
+</definition>
+<definition name="Justforfun_t_update" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_update.jsp"/>
+</definition>
+<definition name="Justforfun_t_readonly" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_readonly.jsp"/>
+</definition>
+
+
+<definition name="Justforfun_t_grid" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_grid.jsp"/>
+</definition>
+<definition name="Justforfun_t_view" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_view.jsp"/>
+</definition>
+<definition name="Justforfun_t_update" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_update.jsp"/>
+</definition>
+<definition name="Justforfun_t_readonly" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_readonly.jsp"/>
+</definition>
+
+
+<definition name="Justforfun_t_grid" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_grid.jsp"/>
+</definition>
+<definition name="Justforfun_t_view" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_view.jsp"/>
+</definition>
+<definition name="Justforfun_t_update" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_update.jsp"/>
+</definition>
+<definition name="Justforfun_t_readonly" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_readonly.jsp"/>
+</definition>
+
+
+<definition name="Justforfun_t_grid" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_grid.jsp"/>
+</definition>
+<definition name="Justforfun_t_view" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_view.jsp"/>
+</definition>
+<definition name="Justforfun_t_update" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_update.jsp"/>
+</definition>
+<definition name="Justforfun_t_readonly" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_readonly.jsp"/>
+</definition>
+
+
+<definition name="Justforfun_t_grid" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_grid.jsp"/>
+</definition>
+<definition name="Justforfun_t_view" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_view.jsp"/>
+</definition>
+<definition name="Justforfun_t_update" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_update.jsp"/>
+</definition>
+<definition name="Justforfun_t_readonly" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_readonly.jsp"/>
+</definition>
+
+
+<definition name="Justforfun_t_grid" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_grid.jsp"/>
+</definition>
+<definition name="Justforfun_t_view" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_view.jsp"/>
+</definition>
+<definition name="Justforfun_t_update" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_update.jsp"/>
+</definition>
+<definition name="Justforfun_t_readonly" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/robmod1/Justforfun_t_readonly.jsp"/>
+</definition>
+</tiles-definitions>

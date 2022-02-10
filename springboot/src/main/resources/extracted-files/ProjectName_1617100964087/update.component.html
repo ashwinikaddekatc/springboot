@@ -1,0 +1,78 @@
+<!-- //1 -->
+<div class="container">
+    <h3 class="center"><b>Sales Group Edit Form</b></h3>
+    <br />
+
+    <div class="read-only-pg pad-16">
+        <h3>SALES UPDATE FORM</h3>
+        <br />
+
+        <section class="form-block" style="margin-top:32px">
+            <form (ngSubmit)="onSubmit()">
+                <table>
+                    <tr>
+                        <td style="width:125px;">Name: </td>
+                        <td><input colspan="2" type="text" name="name" [(ngModel)]="student.name" style="width:120px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Depertment: </td>
+                        <td colspan="2"><input type="text" name="depertment" [(ngModel)]="student.department"> </td>
+                    </tr>
+                    <tr>
+                        <td>DOJ:</td>
+                        <td colspan="2"><input type="date" name="joining_date" [(ngModel)]="student.joining_date"> </td>
+                    </tr>
+                    <tr>
+                        <td>Status:</td>
+                        <td colspan="2"><input type="text" name="status" [(ngModel)]="student.status"> </td>
+                    </tr>
+                </table>
+                <br>
+
+                <!-- SALES LINE UPDATE-->
+                <div class="section">
+                    <p>Sales Group Lines Details</p>
+                </div>
+                <!-----H-L LINE part(FormArray For Multiple Lines)---->
+                <div class="clr-row">
+                    <div class="clr-col-lg-12">
+                        <table id="lines" class="table" style="width:100%;">
+                            <thead>
+                                <tr>
+
+                                    <th class="left" style="width:125px;">Name</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let Person of salesPerson">
+
+                                    <td class="left">
+                                        <input type="text" [(ngModel)]="Person.name"
+                                            [ngModelOptions]="{standalone: true}" placeholder="Enter Name"
+                                            class="clr-input">
+                                    </td>
+
+                                    <!--  <td class="left">
+                                    <input type="date" [name]="line.start_date" [(ngModel)]="line.start_date" [ngModelOptions]="{standalone: true}" clrDate />
+                                </td>
+
+                                <td class="left">
+                                    <input type="date" [name]="line.end_date"
+                                        [(ngModel)]="line.end_date" [ngModelOptions]="{standalone: true}" clrDate />
+                                </td> -->
+
+                                    <!-- <td class="left">
+                                        <input type="date" [attr.name]="line.seq" [(ngModel)]="line.seq"
+                                            [ngModelOptions]="{standalone: true}" class="clr-input" />
+                                    </td> -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <button type="submit" form-control class="btn btn-primary">UPDATE</button>
+            </form>
+        </section>
+    </div>

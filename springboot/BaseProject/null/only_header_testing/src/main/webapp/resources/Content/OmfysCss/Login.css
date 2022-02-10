@@ -1,0 +1,162 @@
+﻿html > body #headerbg
+{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    height: 45px;
+    width: 100%;
+    background: #2A4E77;
+    color: White;
+    font-size: small;
+}
+
+html > body #footerbg
+{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    height: 25px;
+    width: 100%;
+    background: #2A4E77;
+    color: White;
+    font-size: small;
+}
+
+
+#logContent
+{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 30%;
+    height: 400px;
+    float: left;
+    border: 1px solid black;
+    border: 1px solid #004088;
+    border-radius: 2em;
+    background-color: #2A4E77;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+    box-shadow: gray 0.5em 0.5em 0.5em;
+}
+
+
+#logo
+{
+    background-image: url('../images/leoni_logo.png');
+    background-repeat: no-repeat;
+    height: 300px;
+    float: right;
+    margin:250px auto;
+    width: 40%;
+}
+
+.hrLine
+{
+    height: 5px;
+    border: 0;
+    background-color: White;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+}
+
+.hrLinefooter
+{
+    position: relative;
+    top: 50px;
+    height: 5px;
+    border: 0;
+    background-color: White;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+}
+
+.hrLinefooterFP
+{
+     position: relative;
+    top: 20px;
+    height: 5px;
+    border: 0;
+    background-color: White;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+}
+#login_header
+{
+    font-family: helvetica;
+    font-size: x-large;
+    font-weight: normal;
+    font-weight: bold;
+    margin: 10px;
+    color: White;
+    text-align: center;
+}
+
+.username_label
+{
+    margin: 20px 10px 5px 30px;
+    font-family: helvetica;
+    color: white;
+    font-size: medium;
+}
+
+.password_label
+{
+    margin: 50px 10px 5px 30px;
+    font-family: helvetica;
+    color: white;
+    font-size: medium;
+}
+
+
+
+
+.inputText
+{
+    margin: 0px 0px 0px 30px;
+    border: 1px solid #C0C0C0;
+    background-color: White;
+    width: 60%;
+    float: left;
+    height: 30px;
+    font-family: helvetica;
+    font-size: large;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+}
+
+
+
+.btn
+{
+    border: medium none;
+    border-radius: 5px;
+    height: 30px;
+    outline: medium none;
+    padding: 8px;
+    padding-top:6px;
+    width: auto;
+    background-color:ThreeDLighShadow;
+    color: Navy;
+    vertical-align: text-bottom;
+    font-weight: bold;
+    cursor: auto;
+    margin-right:auto;
+    margin-top:20px;
+    margin-left:15px;
+    box-shadow: inset -10px -15px 12px -10px rgba(0,0,0,0.5); 
+    cursor:auto;
+    
+}
+.btn:hover {
+
+	
+	background:White;
+}   
+
+
+.mouseoverbtncolor
+{
+    background-color: burlyWood;
+}
+
+td
+{
+    width:auto;
+    margin:auto;
+}

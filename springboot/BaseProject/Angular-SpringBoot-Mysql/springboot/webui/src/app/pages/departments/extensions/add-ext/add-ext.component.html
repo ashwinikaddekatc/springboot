@@ -1,0 +1,18 @@
+<table [formGroup]="extensionForm">
+<td class="left">
+        <input type="date" [attr.id]="'label' + i" formControlName="extn" placeholder="Enter Date" style="width:180px"
+            class="clr-input">
+    </td><td class="left">
+        <input type="date" [attr.id]="'label' + i" formControlName="extn" placeholder="Enter Date" style="width:180px"
+            class="clr-input">
+    </td><td class="left">
+        <input type="date" [attr.id]="'label' + i" formControlName="extn" placeholder="Enter Date" style="width:180px"
+            class="clr-input">
+    </td><div class="left">
+        <cds-textarea control-width="shrink">
+            <!-- <label>textarea</label> -->
+            <textarea formControlName="extn" placeholder="Enter text"></textarea>
+            <cds-control-message></cds-control-message>
+        </cds-textarea>
+    </div>
+</table>

@@ -1,0 +1,95 @@
+<div class="read-only-pg pad-16">
+  <h3>READ ONLY FORM
+    <a (click)="goToWhoColumns()">
+      <clr-icon shape="help" class="is-solid" size="32"></clr-icon>
+    </a>
+  </h3>
+  <br />
+  <!-- whoo column -->
+
+  <clr-modal [(clrModalOpen)]="basic">
+    <h3 class="modal-title"><b>Transaction History</b></h3>
+    <div class="modal-body">
+        <table s-header>
+            <tr>
+                <td>AccountId</td>
+                <td> {{sales.accountId}}</td>
+            </tr>
+            <tr>
+                <td>CreatedAt </td>
+                <td> {{sales.createdAt}} </td>
+            </tr>
+            <tr>
+                <td>CreatedBy </td>
+                <td> {{sales.createdBy}} </td>
+            </tr>
+            <tr>
+                <td>UpdatedAt </td>
+                <td> {{sales.updatedAt}} </td>
+            </tr>
+            <tr>
+                <td>UpdatedBy </td>
+                <td> {{sales.updatedBy}} </td>
+            </tr>
+        </table>
+    
+    </div>
+</clr-modal>
+
+  <!-- <clr-tabs>
+        <clr-tab> -->
+  <!-- <clr-tab-content> -->
+  <br />
+  <table class="s-header">
+        <tr>
+            <td style="width:125px">tech stack</td>
+            <td> {{sales.tech_stack}}</td>
+        </tr>
+        <tr>
+            <td style="width:125px">object_type</td>
+            <td> {{sales.object_type}}</td>
+        </tr>
+        <tr>
+            <td style="width:125px">sub_object_type</td>
+            <td> {{sales.sub_object_type}}</td>
+        </tr>
+
+  </table>
+
+ 
+  <br />
+  <button (click)="back()" class="btn btn-primary">
+    <clr-icon shape="caret left"></clr-icon>Back
+  </button>
+</div>
+
+
+<!-- line form satrt -->
+<div class="row">
+  <div class="col-lg-12">
+    <table class="s-order-line table" style="width:100%;">
+      <thead>
+        <tr>
+ <th class="left" style="width:125px;">operation_type</th>
+ <th class="left" style="width:125px;">field_type</th>
+ <th class="left" style="width:125px;">Code</th>
+ <th class="left" style="width:125px;">file_type</th>
+
+        </tr>
+      </thead>
+      <tbody *ngIf="sales.salesperson">
+        <tr *ngFor="let salesperson of sales.salesperson">
+          
+          <td class="left">{{ salesperson.operation_type }}</td>
+          <td class="left">{{ salesperson.field_type }}</td>
+          <td class="left">{{ salesperson.code }}</td>
+          <td class="left">{{ salesperson.file_type }}</td>
+         
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button (click)="back()" class="btn btn-primary">
+    <clr-icon shape="caret left"></clr-icon>Back
+  </button>
+</div>

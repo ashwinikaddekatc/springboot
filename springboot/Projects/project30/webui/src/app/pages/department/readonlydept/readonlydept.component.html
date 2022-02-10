@@ -1,0 +1,68 @@
+<div class="read-only-pg pad-16">
+    <h3>READ ONLY FORM
+        <a (click)="goToWhoColumns()">
+            <clr-icon shape="help"  class="is-solid" size="32"></clr-icon>
+        </a>
+    </h3>
+    <br />
+        <!-- whoo column -->
+    <clr-modal [(clrModalOpen)]="basic">
+        <h3 class="modal-title"><b>Transaction History</b></h3>
+        <div class="modal-body">
+            <table s-header>
+                <tr>
+                    <td style="width:125px">D_id</td>
+                    <td> {{department.did}}</td>
+                </tr>
+                <tr>
+                    <td>D_Name </td>
+                    <td> {{department.dname}} </td>
+                </tr>
+                <tr>
+                    <td>D_head </td>
+                    <td> {{department.dhead}} </td>
+                </tr>
+                <tr>
+                    <td>D_contact </td>
+                    <td> {{department.dcontact}} </td>
+                </tr>
+                <tr>
+                    <td>No.of_Emp </td>
+                    <td> {{department.no_ofEmp}} </td>
+                </tr>
+            </table>
+        
+        </div>
+    </clr-modal>
+    <!-- <clr-tabs>
+        <clr-tab> -->
+    <!-- <clr-tab-content> -->
+    <br />
+    <table class="s-header">
+        <tr>
+            <td style="width:125px">D_Id</td>
+            <td> {{department.did}}</td>
+        </tr>
+        <tr>
+            <td>D_Name </td>
+            <td> {{department.dname}} </td>
+        </tr>
+        <tr>
+            <td>D_head </td>
+            <td> {{department.dhead}} </td>
+        </tr>
+        <tr>
+            <td>D_contact </td>
+            <td> {{department.dcontact }} </td>
+        </tr>
+        <tr>
+            <td>No.of_Emp </td>
+            <td> {{department.no_ofEmp}} </td>
+        </tr>
+
+    </table>
+    <br />
+    <button (click)="back()" class="btn btn-primary">
+        <clr-icon shape="caret left"></clr-icon>Back
+    </button>
+   </div>

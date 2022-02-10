@@ -1,0 +1,17 @@
+#GridTable  tr:hover td 
+ { 
+    background-color: #CAD6DF; 
+ } 
+ 
+ .selectRowCSS 
+     { 
+     
+          background-color:gray; 
+      }  
+      
+   /*   .selectTdCSS 
+    { 
+        background-color:#FFFFFF; 
+      }
+      */
+ 

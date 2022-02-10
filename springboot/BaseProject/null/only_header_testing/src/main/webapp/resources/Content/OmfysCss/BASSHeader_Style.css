@@ -1,0 +1,40 @@
+﻿
+.InputText
+{
+    
+border:1px solid #C0C0C0; 
+background-color:White;
+float:left;
+height:20px;
+padding:0px 7px 0px 7px;
+padding-left: 5px;
+
+} 
+.InputText:focus
+{
+    border: 1px solid #5082BE;
+    background-color: White;
+    float: left;
+    height: 20px;
+    padding: 0px 7px 0px 7px;
+    padding-left: 5px;
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+}
+.InputText:hover
+{
+    border: 1px solid #5082BE;
+    background-color: White;
+    float: left;
+    height: 20px;
+    padding: 0px 7px 0px 7px;
+    padding-left: 5px;
+}
+
+#TaxformBody
+{
+    font-size:12px; 
+    font-family:Helvetica;
+    color:Black;
+}

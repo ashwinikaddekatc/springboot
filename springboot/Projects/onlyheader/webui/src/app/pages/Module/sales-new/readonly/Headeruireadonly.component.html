@@ -1,0 +1,71 @@
+<div class="read-only-pg pad-16">
+    <h3>READ ONLY FORM</h3>
+    <br />
+
+   
+	<a (click)="goToWhoColumns()" style=" display: block;margin-left: 100%;">
+	<clr-icon shape="help"  class="is-solid" size="32"></clr-icon>
+	</a>
+	<clr-modal [(clrModalOpen)]="basic">
+    <h3 class="modal-title"><b>Transaction History</b></h3>
+    <div class="modal-body">
+        <table s-header>
+            <tr>
+                <td><b>Account Id: </b></td>
+                <td> {{ sales.accountId }} </td>
+            </tr>
+            <tr>
+                <td><b>Created By: </b></td>
+                <td> {{ sales.createdBy }} </td>
+            </tr>
+            <tr>
+                <td><b>Created At: </b></td>
+                <td> {{ sales.createdAt | date:'medium' }} </td>
+            </tr>
+            <tr>
+                <td><b>Updated At: </b></td>
+                <td> {{ sales.updatedAt | date:'medium' }} </td>
+            </tr>
+            <tr>
+                <td><b>Updated By: </b></td>
+                <td> {{ sales.updatedBy }} </td>
+            </tr>
+        </table>
+        
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline" (click)="basic = false">Cancel</button>
+        <button type="button" class="btn btn-primary" (click)="basic = false">Ok</button>
+    </div>
+</clr-modal>
+<!-- who column end -->
+    <br />
+    <table class="s-header">
+        <tr>
+            <td style="width:125px">label1</td>
+            <td> {{sales.label1}}</td>
+        </tr>
+        <tr>
+            <td style="width:125px">label2</td>
+            <td> {{sales.label2}}</td>
+        </tr>
+        <tr>
+            <td style="width:125px">label3</td>
+            <td> {{sales.label3}}</td>
+        </tr>
+        <tr>
+            <td style="width:125px">label4</td>
+            <td> {{sales.label4}}</td>
+        </tr>
+
+    </table>
+    <br />
+	
+		 <!-- EXTENSION FIELDS START -->
+ <teacher-readonly-extension [teacherExtension]="sales"></teacher-readonly-extension>
+ <!-- EXTENSION FIELDS END-->
+
+           <button (click)="back()" class="btn btn-primary">
+            <clr-icon shape="caret left"></clr-icon>Back
+        </button>
+    </div>

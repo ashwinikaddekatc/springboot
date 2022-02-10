@@ -1,0 +1,79 @@
+<div class="entry-pg pad-16">
+    <h3 class="center"><b>SINGLE LINE ENTRY FORM</b></h3>
+    <!-- <div class="section">
+        <p> Single Lines Details</p>
+    </div> -->
+
+    <!-- extension builder -->
+    <a id="build_extension" [routerLink]="['../../extension/all']">
+        <clr-icon shape="airplane" size="32"></clr-icon>
+    </a>
+
+    <section class="form-block" style="margin-top:32px">
+        <!-- entry form-->
+        <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+
+            <div class="clr-row">
+                <div class="clr-col-lg-12">
+                    <table class="table" style="width:100%;" formArrayName="department">
+                        <thead>
+                            <tr>
+                                <th class="left" style="width:125px;">Dname</th>
+                                <th class="left" style="width:125px;">Dhead</th>
+                                <th class="left" style="width:125px;">Dcontact</th>
+                                <th class="left" style="width:125px;">EmpCount</th>
+
+                                <!-- EXTENSION FIELDS START -->
+                                <app-add-label [extensionForm]="entryForm"></app-add-label>
+                                <!-- EXTENSION FIELDS END-->
+
+                                <th class="right" style="width:125px;">{{ controls.length > 1 ? 'Actions' : '' }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of controls; let i=index" [formGroupName]="i">
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="dname"
+                                        placeholder="Enter Name" style="width:180px" class="clr-input">
+                                </td>
+
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="dhead"
+                                        placeholder="Enter Head" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="number" [attr.id]="'label' + i" formControlName="dcontact"
+                                        placeholder="Enter Contact" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="number" [attr.id]="'label' + i" formControlName="empCount"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+
+                                <!-- EXTENSION FIELDS START -->
+                                <app-add-ext [extensionForm]="entryForm"></app-add-ext>
+                                <!-- EXTENSION FIELDS END-->
+
+                                <td style="width:40px;">
+                                    <a *ngIf="controls.length > 1" (click)="onRemoveLines(i)">
+                                        <clr-icon shape="trash" class="is-error"></clr-icon>
+                                    </a>
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+                        <button type="button" class="btn btn-primary button1" (click)="onAddLines()">
+                            <clr-icon shape="plus"></clr-icon>
+                        </button>
+                    </table>
+                </div>
+            </div>
+            <br>
+
+            <button type="submit" class="btn btn-primary" [disabled]="!entryForm.valid">SUBMIT</button>
+        </form>
+    </section>
+
+</div>

@@ -1,0 +1,175 @@
+<div class="container">
+    <h3 class="center"><b>DYNAMIC FIELD SETUP</b></h3>
+
+
+    <!-- Header form start -->
+    <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+
+        <div class="section">
+            <p> Fields Details </p>
+        </div>
+        <!-----H-L LINE part(FormArray For Multiple Lines)---->
+        <div class="clr-row">
+            <div class="clr-col-lg-12">
+                <table class="table" style="width:100%;" formArrayName="fields">
+                    <thead>
+                        <tr>
+                            <th class="left" style="width:125px;">Name</th>
+                            <th class="left" style="width:125px;">About</th>
+                            <th class="left" style="width:125px;">Department</th>
+                            <th class="right" style="width:125px;">Status</th>
+                            <!-- <th class="left" style="width:125px;">Date</th> -->
+                            <th class="right" style="width:125px;">Active</th>
+                            <th class="right" style="width:125px;">DateTime</th>
+                            <th class="right" style="width:125px;">City</th>
+                            <th class="left" style="width:125px;">Mobile</th>
+                            <th class="left" style="width:125px;">userUrl</th>
+                            <th class="left" style="width:125px;">emailId</th>
+                            <th class="left" style="width:125px;">Profile</th>
+                            <th class="left" style="width:125px;">Country</th>
+                            <th class="left" style="width:125px;">Currency</th>
+                            <th class="left" style="width:125px;">creditNo</th>
+                            <th class="left" style="width:125px;">MulAuto</th>
+
+
+
+
+                            <th class="right" style="width:125px;">Actions</th>
+
+
+
+                            <!-- <th class="right" style="width:125px;">{{ controls.length > 1 ? 'Actions' : '' }}</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of controls; let i=index" [formGroupName]="i">
+                            <!-- testfield -->
+                            <!-- <form name="form" [formGroup]="form"> -->
+                            <td class="left">
+                                <input type="text" [attr.id]="'label' + i" formControlName="name"
+                                    placeholder="Enter Label" style="width:180px" class="clr-input" />
+                                <!-- <div class="invalid-feedback">
+                                        <div>First name is required</div>
+                                    </div> -->
+
+                            </td>
+
+                            <!-- //textarea -->
+                            <div class="clr-col-md-20 clr-col-sm-12">
+                                <cds-textarea control-width="shrink">
+                                    <!-- <label>textarea</label> -->
+                                    <textarea formControlName="about"></textarea>
+                                    <cds-control-message></cds-control-message>
+                                </cds-textarea>
+                            </div>
+
+                            <!-- dropdown-type -->
+                            <td class="left">
+                                <select colspan="2" formControlName="type" selected="null" style="width:180px"
+                                    class="clr-dropdown" formControlName="department">
+                                    <option value="null">Choose Field Type</option>
+                                    <option *ngFor="let type of field_type" [ngValue]="type">{{ type }}</option>
+                                </select>
+                            </td>
+
+                            <!-- //toggle-switch -->
+                            <div>
+                                <div class="left">
+                                    <input type="checkbox" id="active" formControlName="status" clrToggle />
+                                    <label for="active">Status</label>
+                                </div>
+                            </div>
+
+
+                            <!-- readonly -->
+                            <td class="center">
+                                <div class="toggle-switch">
+                                    <input [attr.id]="'readonly' + i" type="checkbox" formControlName="iscontactbase" />
+                                    <label [for]="'readonly' + i"></label>
+                                </div>
+                            </td>
+
+                            <!-- datetime -->
+                            <div class="clr-col-md-4 clr-col-sm-12">
+                                <!-- <label for="start_date">Start Date</label> -->
+                                <input id="start_date" type="date" formControlName="datetime"
+                                    style="width: fit-content;">
+                            </div>
+
+
+                            <!-- multiselect -->
+                            <td class="left">
+                                <select colspan="2" formControlName="city" selected="null" style="width:180px"
+                                    class="clr-dropdown" multiple>
+                                    <option value="null">Choose Field Type</option>
+                                    <option *ngFor="let type of field_type1" [ngValue]="type">{{ type }}</option>
+                                </select>
+                            </td>
+
+                            <!-- //contact field -->
+                            <td class="left">
+                                <input type="number" [attr.id]="'label' + i" formControlName="contact"
+                                    placeholder="Enter number" style="width:180px" class="clr-input">
+                            </td>
+
+                            <!-- //url -->
+                            <td class="left">
+                                <input type="url" [attr.id]="'label' + i" formControlName="userurl"
+                                    placeholder="Enter your url" style="width:180px" class="clr-input">
+                            </td>
+
+                            <!-- //email -->
+                            <td class="left">
+                                <input type="email" [attr.id]="'label' + i" formControlName="email"
+                                    placeholder="Enter your email" style="width:180px" class="clr-input">
+                            </td>
+
+                            <!-- upload -->
+                            <td class="left">
+                                <input type="file" [attr.id]="'label' + i" formControlName="profile"
+                                    placeholder="upload your file" style="width:180px">
+                            </td>
+                            <!-- Autocmplete -->
+                            <td class="left">
+                                <input type="text" autocomplete="on" name="viki" [attr.id]="'label' + i"
+                                    formControlName="country" style="width:180px" class="clr-input">
+                            </td>
+
+                            <!-- currency -->
+                            <td class="left">
+                                <input type="number" #cur min="0.00" max="10000.00" step="0.01" [attr.id]="'label' + i"
+                                    formControlName="currency" style="width:180px" class="clr-input" />
+                                <!-- {{cur.value|currency}} -->
+                            </td>
+
+                            <!-- masking -->
+                            <td class="left">
+                                <input type="text" [textMask]="mask" [attr.id]="'label' + i"
+                                    formControlName="creditnumber" style="width:180px" class="clr-input">
+                            </td>
+                            <!-- MultiAutocmplete -->
+                            <td class="left">
+                                <input type="text" autocomplete="on" name="viki" [attr.id]="'label' + i"
+                                    formControlName="vehicles" style="width:180px" class="clr-input">
+                            </td>
+
+                            <td style="width:40px;">
+                                <a *ngIf="controls.length > 1" (click)="onRemoveLines(i)">
+                                    <clr-icon shape="trash" class="is-error"></clr-icon>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <button type="button" class="btn btn-primary button1" (click)="onAddLines()">
+                        <clr-icon shape="plus"></clr-icon>
+                    </button>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="center">
+            <button type="submit" class="btn btn-primary" [disabled]="!entryForm.valid">SUBMIT</button>
+        </div>
+    </form>
+</div>

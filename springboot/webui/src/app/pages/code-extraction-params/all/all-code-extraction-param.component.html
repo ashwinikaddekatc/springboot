@@ -1,0 +1,83 @@
+<div class="grid-pg  pad-16">
+  <h3 style="text-align: center;">CODE EXTRACTION PARAMS GRID VIEW</h3>
+ <!-- <button id="add" class="btn btn-primary" (click)="goToAdd()">
+    <clr-icon shape="plus"></clr-icon>ADD
+  </button>-->
+  <br>
+  <div class="clr-row">
+    <div class="clr-col-lg-12">
+      <div style="width:1140px">
+        <div class="s-info-bar">
+          <!-- FILTER BUTTON-->
+          <input type="text" style="padding:8px;margin:15px auto;width:30%;"
+            placeholder="Type to filter the name column..." (keyup)="doFilter($event)" />
+          <div style="flex:1"></div>
+          <div *ngIf="isLoading" class="spinner spinner-md" style="margin:0 10px;">Loading...</div>
+        </div>
+        <ngx-datatable #table style='height:450px; width:100%;' [rows]="rows" [columns]="columns"
+          [columnMode]="'standard'" [headerHeight]="45" [footerHeight]="45" [rowHeight]="36" [scrollbarV]="true">
+          <ngx-datatable-column name="Actions" sortable="false" width="65">
+            <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+              <a (click)="goToReadOnly(row.id)">
+                <clr-icon shape="eye" class="is-info"></clr-icon>
+              </a>
+              <a (click)="goToEdit(row.id)">
+                <clr-icon shape="edit" class="is-error"></clr-icon>
+              </a>
+              <a (click)="goToEditor(row.id)">
+                <clr-icon shape="cloud" class="is-info"></clr-icon>
+              </a>
+           </ng-template>
+          </ngx-datatable-column>
+          <ngx-datatable-column name="Extraction Enable" sortable="false" width="65">
+            <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+              <!-- <div class="toggle-switch"> -->
+                <input type="checkbox" (click)="extractionToggle(row.id, row.is_extraction_enabled)" [checked]="row.is_extraction_enabled"
+                  [attr.id]="'e'+ row.id" clrToggle />
+                <label [for]="'e' + row.id"></label>
+              <!-- </div> -->
+            </ng-template>
+          </ngx-datatable-column>
+
+          <ngx-datatable-column *ngFor="let col of columns" [name]="col.name" [prop]="col.prop" [width]="col.width">
+          </ngx-datatable-column>
+
+          <ngx-datatable-column name="Creation Enable" sortable="false" width="65">
+            <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+              <!-- <div class="toggle-switch"> -->
+                <input type="checkbox" (click)="creationToggle(row.id, row.is_creation_enabled)" [checked]="row.is_creation_enabled"
+                  [attr.id]="'c' + row.id" clrToggle />
+                <label [for]="'c' + row.id"></label>
+              <!-- </div> -->
+            </ng-template>
+          </ngx-datatable-column>
+
+
+        </ngx-datatable>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <ng-template #getById let-row="row" let-value="value" let-i="index">
+  <a (click)="goToReadOnly(value)" attr.data-itemid="{{value}}">
+    <clr-icon shape="eye" class="is-info"></clr-icon>
+  </a>
+  <a (click)="goToEdit(value)" attr.data-itemid="{{value}}">
+    <clr-icon shape="edit" class="is-error"></clr-icon>
+  </a>
+</ng-template>
+
+<ng-template #extSwitch let-row="row" let-value="value" let-i="index">
+  <div class="toggle-switch">
+    <input type="checkbox" (click)="extractionToggle(row.id, value)" [checked]="value" [attr.id]="'e'+ row.id" />
+    <label [for]="'e' + row.id"></label>
+  </div>
+</ng-template>
+
+<ng-template #creationSwitch let-row="row" let-value="value" let-i="index">
+  <div class="toggle-switch">
+    <input type="checkbox" (click)="creationToggle(row.id, value)" [checked]="value" [attr.id]="'c' + row.id" />
+    <label [for]="'c' + row.id"></label>
+  </div>
+</ng-template> -->

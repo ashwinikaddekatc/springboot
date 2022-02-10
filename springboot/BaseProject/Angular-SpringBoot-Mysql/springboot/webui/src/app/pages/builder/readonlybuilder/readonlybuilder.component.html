@@ -1,0 +1,98 @@
+<div class="read-only-pg pad-16">
+    <h3>READ ONLY FORM <a (click)="goToWhoColumns()">
+            <clr-icon shape="help" class="is-solid" size="32"></clr-icon>
+        </a></h3>
+    <br />
+
+    <!-- <clr-tabs>
+        <clr-tab> -->
+    <!-- <clr-tab-content> -->
+    <br />
+
+
+    <clr-modal [(clrModalOpen)]="basic">
+        <h3 class="modal-title"><b>Transaction History</b></h3>
+        <div class="modal-body">
+            <table s-header>
+                <!-- <tr>
+                    <td><b>Account Id: </b></td>
+                    <td> {{ builder.accountId }} </td>
+                </tr> -->
+                <tr>
+                    <td><b>Created By: </b></td>
+                    <td> {{ builder.createdBy }} </td>
+                </tr>
+                <tr>
+                    <td><b>Created At: </b></td>
+                    <td> {{ builder.createdAt | date:'medium' }} </td>
+                </tr>
+                <tr>
+                    <td><b>Updated At: </b></td>
+                    <td> {{ builder.updatedAt | date:'medium' }} </td>
+                </tr>
+                <tr>
+                    <td><b>Updated By: </b></td>
+                    <td> {{ builder.updatedBy }} </td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline" (click)="basic = false">Cancel</button>
+            <button type="button" class="btn btn-primary" (click)="basic = false">Ok</button>
+        </div>
+    </clr-modal>
+    <!-- who column end -->
+
+    <!-- ALERT MESSAGE -->
+    <clr-alert *ngIf="alertMessage" [clrAlertType]="alertType">
+        <clr-alert-item>
+            <span class="alert-text">
+                {{ alertMessage }}
+            </span>
+        </clr-alert-item>
+    </clr-alert>
+
+    <!-- lineonly -->
+    <table class="s-header">
+        <tr>
+            <td style="width:125px">Id</td>
+            <td> {{builder.id}}</td>
+        </tr>
+        <tr>
+            <td>Form_id </td>
+            <td> {{builder.form_id}} </td>
+        </tr>
+        <tr>
+            <td>Form_Ver</td>
+            <td> {{builder.form_version}} </td>
+        </tr>
+        <tr>
+            <td>Header_id </td>
+            <td> {{builder.header_id}} </td>
+        </tr>
+        <tr>
+            <td>Com1 </td>
+            <td> {{builder.comp1}} </td>
+        </tr>
+        <tr>
+            <td>Com2 </td>
+            <td> {{builder.comp2}} </td>
+        </tr>
+        <tr>
+            <td>Com3 </td>
+            <td> {{builder.comp3}} </td>
+        </tr>
+
+    </table>
+    <br />
+
+
+
+    <button (click)="back()" class="btn btn-primary">
+        <clr-icon shape="caret left"></clr-icon>Back
+    </button>
+    <button id="build_btn" (click)="buildDynamicForm()" class="btn btn-primary">
+        <clr-icon shape="pop-out"></clr-icon> Build
+    </button>
+</div>

@@ -1,0 +1,127 @@
+<section>
+<div class="clr-row"  style="height: fit-content;">
+ 
+ <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+
+ <div> <label >parent name </label></div>
+  
+ <input type="text" class="clr-input" name="extn1" [(ngModel)]="teacherExtension.extn1 "  />
+  
+  </div>
+
+<div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+	 <div><label for="description">my list</label> </div>
+<select id="select" class="clr-dropdown"    name="extn2" [(ngModel)]="teacherExtension.extn2" >
+	<option  value="null">Choose ...</option>
+	<option value="medicine">medicine</option>
+	<option value="herbals">herbals</option>
+	<option value="beauty">beauty</option>
+ </select>
+</div> 
+
+
+ <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+
+ <div> <label >checkme </label></div>
+
+ <input colspan="2" style="width:180px" type="checkbox"  name="extn3" [(ngModel)]="teacherExtension.extn3" /> 
+ 
+   </div>
+
+ 
+ <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+
+ <div> <label >desc </label></div>
+
+ <textarea rows="3" cols="30" colspan="2" class="clr-textarea" style="width:ft-content;" name="extn4" [(ngModel)]="teacherExtension.extn4"></textarea> 
+ 
+   </div>
+ 
+
+
+           <div class="clr-col-md-4 clr-col-sm-12" >
+         
+          <input type="checkbox"  style="width: fit-content;" clrToggle name="extn5" [(ngModel)]="teacherExtension.extn5"/> <div> <label > toggleme</label></div>
+    </div>
+
+
+ <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+
+       <div>  <label>myurl</label> </div>
+              
+
+                <input type="url"  style="width: fit-content;" autocomplete="url" 
+
+                name="extn6" [(ngModel)]="teacherExtension.extn6"   placeholder="Enter   myurl"
+                    class="clr-input"/>
+              
+            </div> <br>
+
+<div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+ 
+     <div>   <label>mcurrency</label> </div>
+
+
+ <span style='font-size:25px;'>&#8377;</span> <input type="number" class="clr-input" [value]="currency " [(ngModel)]="currency" 		 placeholder="Enter  mcurrency" 	name="extn7" [(ngModel)]="teacherExtension.extn7" style="width: fit-content;"/>
+         {{currency |currency:'INR'}}   
+
+          </div><br>
+
+ 
+ <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+
+  <div><label >autocomplete </label></div>
+
+ <input  class="clr-input" style="width:180px" type="text"  name="extn8" [(ngModel)]="teacherExtension.extn8" autocomplete="on"/> 
+ 
+   </div>
+
+<div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+
+        <div> <label>email</label> </div>
+					
+
+                <input 
+                 type="email" 
+
+                 style="width: fit-content;"
+                
+
+               name="extn10" [(ngModel)]="teacherExtension.extn10" 
+ 
+               placeholder="Enter email"
+  
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  	 placeholder="Enter   email"			
+                    class="clr-input"/>
+ 
+             </div><br>
+
+<div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+
+        <div> <label>password</label> </div>
+
+
+ <input type="password" class="clr-input" 	 placeholder="Enterpassword
+"	  name="extn11" [(ngModel)]="teacherExtension.extn11" style="width: fit-content;"/>
+
+              </div><br>
+
+ <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+ 
+       <div> <label>telephoene</label> </div>
+
+
+              <input type="tel" mask="(000) 000-0000" style="width: fit-content;" 	
+	 placeholder=" (9658746325) "  	class="clr-input" name="extn9" [(ngModel)]="teacherExtension.extn9"/>
+   </div><br>
+ 
+ <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+
+ <div> <label >birthdate </label></div>
+ 
+  <input type="date" name="extn12" class="clr-input" [(ngModel)]="teacherExtension.extn12"/>
+ 
+   </div>
+
+</div>
+</section>

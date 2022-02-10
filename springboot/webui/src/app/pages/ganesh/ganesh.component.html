@@ -1,0 +1,75 @@
+<div class="s-order-dash-pg">
+
+
+<div class="chart-box">
+        <h4> data </h4>
+        <ngx-charts-advanced-pie-chart
+          style="position:relative"
+          [view]="[990, 270]"
+          [scheme]="colorScheme"
+          [results]="gb11Data"
+        >
+        </ngx-charts-advanced-pie-chart>
+      </div>
+<div class="chart-box">
+      <h4> data </h4>
+      <ngx-charts-advanced-pie-chart
+        style="position:relative"
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="gb12Data"
+      >
+      </ngx-charts-advanced-pie-chart>
+    </div>
+<div class="chart-box">
+    <h4> Orders By Country </h4>
+        <ngx-charts-bar-vertical
+            [view]="view"
+            [barPadding]="1"
+            [scheme]="barColorScheme"
+            [results]="gb23Data"
+            [roundDomains]="true"
+            [showGridLines]="true"
+            [xAxis]="true"
+            [yAxis]="true"
+            [legend]="false"
+            [roundEdges]="false"
+        >
+        </ngx-charts-bar-vertical>
+  </div>
+<div class="chart-box">
+        <h4> Orders By Payment Type </h4>
+        <ngx-charts-advanced-pie-chart
+          style="position:relative"
+          [view]="[284, 155]"
+          [scheme]="colorScheme"
+          [results]="gb13Data"
+        >
+        </ngx-charts-advanced-pie-chart>
+    </div>
+<div class="chart-box">
+    <h4> data </h4>
+        <ngx-charts-bar-vertical
+            [view]="[284, 155]"
+            [barPadding]="1"
+            [scheme]="barColorScheme"
+            [results]="gb24Data"
+            [roundDomains]="true"
+            [showGridLines]="true"
+            [xAxis]="true"
+            [yAxis]="true"
+            [legend]="false"
+            [roundEdges]="false"
+        >
+        </ngx-charts-bar-vertical>
+  </div>
+<div class="chart-box">
+        <h4> Orders By Payment Type </h4>
+        <ngx-charts-advanced-pie-chart
+          style="position:relative"
+          [view]="[284, 155]"
+          [scheme]="colorScheme"
+          [results]="gb15Data"
+        >
+        </ngx-charts-advanced-pie-chart>
+    </div></div>

@@ -1,0 +1,94 @@
+"<div class=\"read-only-pg pad-16\">" + "\r\n" + 
+"  <h3>READ ONLY FORM" + "\r\n" + 
+"    <a (click)=\"goToWhoColumns()\">" + "\r\n" + 
+"      <clr-icon shape=\"help\" class=\"is-solid\" size=\"32\"></clr-icon>" + "\r\n" + 
+"    </a>" + "\r\n" + 
+"  </h3>" + "\r\n" + 
+"  <br />" + "\r\n" + 
+"  <!-- whoo column -->" + "\r\n" + 
+"" + "\r\n" + 
+"  <clr-modal [(clrModalOpen)]=\"basic\">" + "\r\n" + 
+"    <h3 class=\"modal-title\"><b>Transaction History</b></h3>" + "\r\n" + 
+"    <div class=\"modal-body\">" + "\r\n" + 
+"        <table s-header>" + "\r\n" + 
+"            <tr>" + "\r\n" + 
+"                <td>AccountId</td>" + "\r\n" + 
+"                <td> {{sales.accountId}}</td>" + "\r\n" + 
+"            </tr>" + "\r\n" + 
+"            <tr>" + "\r\n" + 
+"                <td>CreatedAt </td>" + "\r\n" + 
+"                <td> {{sales.createdAt}} </td>" + "\r\n" + 
+"            </tr>" + "\r\n" + 
+"            <tr>" + "\r\n" + 
+"                <td>CreatedBy </td>" + "\r\n" + 
+"                <td> {{sales.createdBy}} </td>" + "\r\n" + 
+"            </tr>" + "\r\n" + 
+"            <tr>" + "\r\n" + 
+"                <td>UpdatedAt </td>" + "\r\n" + 
+"                <td> {{sales.updatedAt}} </td>" + "\r\n" + 
+"            </tr>" + "\r\n" + 
+"            <tr>" + "\r\n" + 
+"                <td>UpdatedBy </td>" + "\r\n" + 
+"                <td> {{sales.updatedBy}} </td>" + "\r\n" + 
+"            </tr>" + "\r\n" + 
+"        </table>" + "\r\n" + 
+"    " + "\r\n" + 
+"    </div>" + "\r\n" + 
+"</clr-modal>" + "\r\n" + 
+"" + "\r\n" + 
+"  <!-- <clr-tabs>" + "\r\n" + 
+"        <clr-tab> -->" + "\r\n" + 
+"  <!-- <clr-tab-content> -->" + "\r\n" + 
+"  <br />" + "\r\n" + 
+"  <table class=\"s-header\">" + "\r\n" + 
+"    <tr>" + "\r\n" + 
+"      <td style=\"width:125px\">sId</td>" + "\r\n" + 
+"      <td> {{sales.id}}</td>" + "\r\n" + 
+"    </tr>" + "\r\n" + 
+"    <tr>" + "\r\n" + 
+"      <td>Name </td>" + "\r\n" + 
+"      <td> {{sales.afname}} </td>" + "\r\n" + 
+"    </tr>" + "\r\n" + 
+"    <tr>" + "\r\n" + 
+"      <td>Depertment </td>" + "\r\n" + 
+"      <td> {{sales.lname}} </td>" + "\r\n" + 
+"    </tr>" + "\r\n" + 
+"  " + "\r\n" + 
+"" + "\r\n" + 
+"  </table>" + "\r\n" + 
+"" + "\r\n" + 
+"  <!-- EXTENSION FIELDS START -->" + "\r\n" + 
+"  <teacher-readonly-extension [teacherExtension]=\"sales\"></teacher-readonly-extension>" + "\r\n" + 
+"  <!-- EXTENSION FIELDS END-->" + "\r\n" + 
+"" + "\r\n" + 
+"  <br />" + "\r\n" + 
+"  <button (click)=\"back()\" class=\"btn btn-primary\">" + "\r\n" + 
+"    <clr-icon shape=\"caret left\"></clr-icon>Back" + "\r\n" + 
+"  </button>" + "\r\n" + 
+"</div>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"<!-- line form satrt -->" + "\r\n" + 
+"<div class=\"row\">" + "\r\n" + 
+"  <div class=\"col-lg-12\">" + "\r\n" + 
+"    <table class=\"s-order-line table\" style=\"width:100%;\">" + "\r\n" + 
+"      <thead>" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"          <th class=\"left\" style=\"width:200px;\">bname</th>" + "\r\n" + 
+"          <th class=\"left\" style=\"width:200px;\">btitle</th>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"      </thead>" + "\r\n" + 
+"      <tbody *ngIf=\"sales.book\">" + "\r\n" + 
+"        <tr *ngFor=\"let book of sales.book\">" + "\r\n" + 
+"          " + "\r\n" + 
+"          <td class=\"left\">{{ book.bname }}</td>" + "\r\n" + 
+"          <td class=\"left\">{{ book.btitle }}</td>" + "\r\n" + 
+"         " + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"      </tbody>" + "\r\n" + 
+"    </table>" + "\r\n" + 
+"  </div>" + "\r\n" + 
+"  <button (click)=\"back()\" class=\"btn btn-primary\">" + "\r\n" + 
+"    <clr-icon shape=\"caret left\"></clr-icon>Back" + "\r\n" + 
+"  </button>" + "\r\n" + 
+"</div>" 

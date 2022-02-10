@@ -1,0 +1,36 @@
+<div class="container">
+        <div class="section">
+         <p> Section Defination Widgets
+            </p>
+        </div>
+
+         
+           
+               <div class="step-pane"  style="margin-bottom: -30px;">
+                       <div *ngIf="section_type == '1*1'" class="center">
+                           <button   class="btn btn-app btn-primary"  title="Download Query" style="height: 63px;width: 63px;margin-top: 6%;" (click)="onWidget('widget1')">
+                               {{widget1}}
+                           </button>
+                        </div>
+                       <div *ngIf="section_type == '1*2'" class="center">
+                            <button   class="btn btn-app btn-primary"  title="Download Query" style="height: 63px;width: 63px;margin-top: 6%;" (click)="onWidget('widget1')">
+                                {{widget1}}
+                            </button>
+                            
+                            <button type="button"  title="Genrate Query"class="style_prevu_kit btn btn-app btn-primary btn-xs"  (click)="onWidget('widget2')" style="height: 63px;width: 63px;margin-top: 6%;">
+                                {{widget2}}
+                            </button>
+                        </div>
+                        <div *ngIf="section_type == '1*3'" class="center">
+                            <button   class="btn btn-app btn-primary"  title="Download Query" style="height: 63px;width: 63px;margin-top: 6%;" (click)="onWidget('widget1')">
+                                {{widget1}}
+                            </button>
+                            
+                            <button type="button"  title="Genrate Query"class="style_prevu_kit btn btn-app btn-primary btn-xs"  (click)="onWidget('widget2')" style="height: 63px;width: 63px;margin-top: 6%;">
+                                {{widget2}}
+                            </button>
+                            <button type="button"  title="Genrate Query"class="style_prevu_kit btn btn-app btn-primary btn-xs"  (click)="onWidget('widget3')" style="height: 63px;width: 63px;margin-top: 6%;">
+                                {{widget3}}
+                            </button>
+                        </div>
+                   </div>

@@ -1,0 +1,75 @@
+"<div class=\"read-only-pg pad-16\">" + "\r\n" + 
+"    <h3>READ ONLY FORM</h3>" + "\r\n" + 
+"    <br />" + "\r\n" + 
+"" + "\r\n" + 
+"   " + "\r\n" + 
+"	<a (click)=\"goToWhoColumns()\" style=\" display: block;margin-left: 100%;\">" + "\r\n" + 
+"	<clr-icon shape=\"help\"  class=\"is-solid\" size=\"32\"></clr-icon>" + "\r\n" + 
+"	</a>" + "\r\n" + 
+"	<clr-modal [(clrModalOpen)]=\"basic\">" + "\r\n" + 
+"    <h3 class=\"modal-title\"><b>Transaction History</b></h3>" + "\r\n" + 
+"    <div class=\"modal-body\">" + "\r\n" + 
+"        <table s-header>" + "\r\n" + 
+"            <tr>" + "\r\n" + 
+"                <td><b>Account Id: </b></td>" + "\r\n" + 
+"                <td> {{ sales.accountId }} </td>" + "\r\n" + 
+"            </tr>" + "\r\n" + 
+"            <tr>" + "\r\n" + 
+"                <td><b>Created By: </b></td>" + "\r\n" + 
+"                <td> {{ sales.createdBy }} </td>" + "\r\n" + 
+"            </tr>" + "\r\n" + 
+"            <tr>" + "\r\n" + 
+"                <td><b>Created At: </b></td>" + "\r\n" + 
+"                <td> {{ sales.createdAt | date:'medium' }} </td>" + "\r\n" + 
+"            </tr>" + "\r\n" + 
+"            <tr>" + "\r\n" + 
+"                <td><b>Updated At: </b></td>" + "\r\n" + 
+"                <td> {{ sales.updatedAt | date:'medium' }} </td>" + "\r\n" + 
+"            </tr>" + "\r\n" + 
+"            <tr>" + "\r\n" + 
+"                <td><b>Updated By: </b></td>" + "\r\n" + 
+"                <td> {{ sales.updatedBy }} </td>" + "\r\n" + 
+"            </tr>" + "\r\n" + 
+"        </table>" + "\r\n" + 
+"        " + "\r\n" + 
+"    </div>" + "\r\n" + 
+"    <div class=\"modal-footer\">" + "\r\n" + 
+"        <button type=\"button\" class=\"btn btn-outline\" (click)=\"basic = false\">Cancel</button>" + "\r\n" + 
+"        <button type=\"button\" class=\"btn btn-primary\" (click)=\"basic = false\">Ok</button>" + "\r\n" + 
+"    </div>" + "\r\n" + 
+"</clr-modal>" + "\r\n" + 
+"<!-- who column end -->" + "\r\n" + 
+"    <br />" + "\r\n" + 
+"    <table class=\"s-header\">" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td style=\"width:125px\">Id</td>" + "\r\n" + 
+"            <td> {{sales.id}}</td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td>Name </td>" + "\r\n" + 
+"            <td> {{sales.name}} </td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td>Depertment </td>" + "\r\n" + 
+"            <td> {{sales.department}} </td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td>Joining Date </td>" + "\r\n" + 
+"            <td> {{sales.joining_date | date}} </td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td>Status </td>" + "\r\n" + 
+"            <td> {{sales.status}} </td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"" + "\r\n" + 
+"    </table>" + "\r\n" + 
+"    <br />" + "\r\n" + 
+"	" + "\r\n" + 
+"		 <!-- EXTENSION FIELDS START -->" + "\r\n" + 
+" <teacher-readonly-extension [teacherExtension]=\"sales\"></teacher-readonly-extension>" + "\r\n" + 
+" <!-- EXTENSION FIELDS END-->" + "\r\n" + 
+"" + "\r\n" + 
+"           <button (click)=\"back()\" class=\"btn btn-primary\">" + "\r\n" + 
+"            <clr-icon shape=\"caret left\"></clr-icon>Back" + "\r\n" + 
+"        </button>" + "\r\n" + 
+"    </div>" 

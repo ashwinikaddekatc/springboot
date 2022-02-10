@@ -1,0 +1,80 @@
+<div class="entry-pg pad-16">
+    <h3 class="center"><b>SALES GROUP ENTRY FORM</b></h3>
+    <div class="section">
+        <p> Menu Group Lines Details</p>
+    </div>
+
+    <section class="form-block" style="margin-top:32px">
+        <!-- entry form-->
+        <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+            <table>
+                <tr>
+                    <td style="width:125px;">Name: </td>
+                    <td><input id="name" colspan="2" type="text" formControlName="name" placeholder="Enter Name"
+                            style="width:180px"></td>
+                </tr>
+
+                <tr>
+                    <td style="width:125px;">Department: </td>
+                    <td><input id="department" colspan="2" type="text" formControlName="department"
+                            placeholder="Enter Depertment" style="width:180px"></td>
+                </tr>
+
+
+                <tr>
+                    <td style="width:125px;">Joining Date: </td>
+                    <td><input id="joining_date" colspan="2" type="date" formControlName="joining_date"
+                            placeholder="Enter joining date" style="width:180px"></td>
+                </tr>
+
+                <tr>
+                    <td style="width:125px;">Status: </td>
+                    <td><input id="status" colspan="2" type="text" formControlName="status" placeholder="Enter Status"
+                            style="width:180px"></td>
+                </tr>
+
+            </table>
+
+
+            <div class="section">
+                <p> SALES PERSON LINE DETAILS</p>
+            </div>
+            <!-----H-L LINE part(FormArray For Multiple Lines)---->
+            <div class="clr-row">
+                <div class="clr-col-lg-12">
+                    <table class="table" style="width:100%;" formArrayName="salesPerson">
+                        <thead>
+                            <tr>
+
+                                <th class="left" style="width:125px;">Name</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of controls; let i=index" [formGroupName]="i">
+
+
+                                <td>
+                                    <input [attr.id]="'name' + i" colspan="2" type="text" formControlName="name"
+                                        class="clr-input" placeholder="Enter Name" />
+                                </td>
+                                <td style="width:40px;">
+                                    <a *ngIf="controls.length > 1" (click)="onRemoveLines(i)">
+                                        <clr-icon shape="trash" class="is-error"></clr-icon>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <button type="button" class="btn btn-primary button1" (click)="onAddLines()">
+                            <clr-icon shape="plus"></clr-icon>
+                        </button>
+                    </table>
+                </div>
+            </div>
+
+            <br>
+            <button type="submit" class="btn btn-primary" [disabled]="!entryForm.valid">SUBMIT</button>
+        </form>
+    </section>
+
+</div>

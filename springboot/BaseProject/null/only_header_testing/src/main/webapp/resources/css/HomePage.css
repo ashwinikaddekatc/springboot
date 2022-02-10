@@ -1,0 +1,41 @@
+html > body #headerbg
+{
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    height: 6%;
+    width: 100%;
+    color: White;
+    font-size: small;
+    background-color: white;
+}
+
+html > body #footerbg
+{
+    position: fixed;
+    right: 0px;
+    top: 96%;
+    height: 4%;
+    width: 100%;
+    color: black;
+    font-size: small;
+    border-top: 1px solid #8FC2DD;
+    background-color: white;
+}
+    
+}
+html > body #welcomeNote
+{
+    position: inherit;
+    width: auto;
+    font-family:helvetica;
+    background-color:transparent;
+    color: #878787;
+    font-size: medium;
+    float:left;
+    /*margin-left: 1%;
+    margin-top: 0.2%;*/
+    font-weight:bold;
+    font-size: small;
+    margin-right: 20px;
+}

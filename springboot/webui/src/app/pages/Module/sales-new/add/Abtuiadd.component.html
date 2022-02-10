@@ -1,0 +1,65 @@
+<div class="entry-pg pad-16">
+    <h3 class="center"><b>ENTRY FORM</b></h3>
+
+    <div>
+        <a style=" display: block;margin-left: 90%;" [routerLink]="['../../extension/all']">
+            <clr-icon shape="airplane" size="32"></clr-icon>
+        </a>
+    </div>
+
+    <!-- entry form-->
+    <section>
+    <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class=clr-row>
+
+            <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+                <label>label1: </label>
+
+                <input class="clr-input" style="width:fit-content;" colspan="2" type="text" formControlName="label1"
+                    placeholder="Enter label1">
+            </div>
+            <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+                <label>label2: </label>
+
+                <input class="clr-input" style="width:fit-content;" colspan="2" type="text" formControlName="label2"
+                    placeholder="Enter label2">
+            </div>
+            <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+                <label>label3: </label>
+
+                <input class="clr-input" style="width:fit-content;" colspan="2" type="text" formControlName="label3"
+                    placeholder="Enter label3">
+            </div>
+            <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+                <label>label4: </label>
+
+                <input class="clr-input" style="width:fit-content;" colspan="2" type="text" formControlName="label4"
+                    placeholder="Enter label4">
+            </div>
+
+
+
+
+        </div>
+
+        <!-- EXTENSION FIELDS START -->
+        <teacher-add-extension [extensionForm]="entryForm"></teacher-add-extension>
+        <!-- EXTENSION FIELDS END-->
+
+
+
+        <br>
+        <button type="submit" class="btn btn-primary" [disabled]="!entryForm.valid">SUBMIT</button>
+
+        <div class="btn-group btn-primary btn-icon" >
+            <button class="btn" style="margin-right: 14px; margin-bottom: 64px;" (click)="update('32','hgsdg','button3')" >insert api button3</button>
+          </div>
+        
+          <div class="btn-group btn-primary btn-icon" >
+            <button class="btn" style="margin-right: 14px; margin-bottom: 64px;" (click)="insert('dggdgg','button2')"  >update api button2</button>   
+          </div>     
+   
+    </form>
+    </section>
+
+</div>

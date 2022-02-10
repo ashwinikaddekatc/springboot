@@ -1,0 +1,18 @@
+
+<definition name="Myprojectui_t_grid" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/MyProjectModule/Myprojectui_t_grid.jsp"/>
+</definition>
+<definition name="Myprojectui_t_view" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/MyProjectModule/Myprojectui_t_view.jsp"/>
+</definition>
+<definition name="Myprojectui_t_update" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/MyProjectModule/Myprojectui_t_update.jsp"/>
+</definition>
+<definition name="Myprojectui_t_readonly" extends="acemaster.definition">
+<put-attribute name="title" value="WASIB"/>
+<put-attribute name="body" value="/WEB-INF/tiles/acemaster/MyProjectModule/Myprojectui_t_readonly.jsp"/>
+</definition>
+</tiles-definitions>

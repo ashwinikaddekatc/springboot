@@ -1,0 +1,78 @@
+<div class="container">
+    <h3 class="center"><b>line only department ENTRY FORM</b></h3>
+
+    <!-- Header form start -->
+    <br />
+
+    <div class="section">
+        <p> department Header </p>
+    </div>
+    <!-- entry form-->
+    <section>
+
+     <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="clr-row">
+            <div class="clr-col-lg-12">
+                <table class="table" style="width:100%;" formArrayName="department">
+                    <thead>
+                        <tr>
+                            <!-- <th class="left" style="width:125px;">Name</th> -->
+                    
+                            <th class="left" style="width:125px;">Dname</th>
+                            <th class="left" style="width:125px;">Dhead</th>
+                            <th class="left" style="width:125px;">Dcontact</th>
+                            <th class="left" style="width:125px;">No_ofEmp</th>
+                            <th class="right" style="width:125px;">{{ controls.length > 1 ? 'Actions' : '' }}</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of controls; let i=index" [formGroupName]="i">
+                            <!-- <td class="left">
+                                    <input type="text" formControlName="name" placeholder="Enter Name"
+                                        style="width:180px">
+                                </td> -->
+                                <td>
+                                   
+                                    <input colspan="2" type="text" formControlName="dname" class="clr-input"
+                                        placeholder="Enter name" />
+                                </td>
+
+                                <td>
+                                 
+                                    <input colspan="2" type="text" formControlName="dhead" class="clr-input"
+                                        placeholder="Enter name" />
+                                </td>
+
+                                <td>
+                                    
+                                    <input colspan="2" type="number" formControlName="dcontact" class="clr-input"
+                                        placeholder="Enter name" />
+                                </td>
+
+                                <td>
+                                  
+                                    <input colspan="2" type="number" formControlName="no_ofEmp" class="clr-input"
+                                        placeholder="Enter name" />
+                                </td>
+                           
+                          
+                            <td style="width:40px;">
+                                <a *ngIf="controls.length > 1" (click)="onRemoveLines(i)">
+                                    <clr-icon shape="trash" class="is-error"></clr-icon>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <button type="button" class="btn btn-primary button1" (click)="onAddLines()">
+                        <clr-icon shape="plus"></clr-icon>
+                    </button>
+                </table>
+            </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary" [disabled]="!entryForm.valid">SUBMIT</button>
+    </form>
+    </section>
+    </div>
+    

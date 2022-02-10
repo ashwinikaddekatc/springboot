@@ -1,0 +1,92 @@
+"<div class=\"container\">" + "\r\n" + 
+"  <h3 class=\"center\"><b>ENTRY FORM</b></h3>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"  <div>" + "\r\n" + 
+"    <a style=\" display: block;margin-left: 90%;\" [routerLink]=\"['../../extension/all']\">" + "\r\n" + 
+"      <clr-icon shape=\"airplane\" size=\"32\"></clr-icon>" + "\r\n" + 
+"    </a>" + "\r\n" + 
+"  </div>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"  <!-- Header form start -->" + "\r\n" + 
+"  <br />" + "\r\n" + 
+"" + "\r\n" + 
+"  <div class=\"section\">" + "\r\n" + 
+"    <p> Header </p>" + "\r\n" + 
+"  </div>" + "\r\n" + 
+"  <!-- entry form-->" + "\r\n" + 
+"  <section>" + "\r\n" + 
+"" + "\r\n" + 
+"    <form [formGroup]=\"entryForm\" (ngSubmit)=\"onSubmit()\">" + "\r\n" + 
+"" + "\r\n" + 
+"      <div class=\"clr-row\" style=\"height: fit-content;\">" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"        <div class=\"clr-col-md-4 clr-col-sm-12\" style=\"margin-bottom: 20px;\">" + "\r\n" + 
+"          <div> <label for=\"menu_name\">sales Name</label></div>" + "\r\n" + 
+"          <input id=\"menu_name\" type=\"text\" style=\"width: fit-content;\" formControlName=\"afname\" placeholder=\"Enter Name\"" + "\r\n" + 
+"            class=\"clr-input\">" + "\r\n" + 
+"        </div>" + "\r\n" + 
+"        " + "\r\n" + 
+"        <div class=\"clr-col-md-4 clr-col-sm-12\">" + "\r\n" + 
+"          <label for=\"description\">department</label>" + "\r\n" + 
+"          <input id=\"description\" type=\"text\" formControlName=\"lname\" placeholder=\"Enter  ..\"" + "\r\n" + 
+"            class=\"clr-input\">" + "\r\n" + 
+"        </div>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"        <!-- EXTENSION FIELDS START -->" + "\r\n" + 
+"        <teacher-add-extension [extensionForm]=\"entryForm\"></teacher-add-extension>" + "\r\n" + 
+"        <!-- EXTENSION FIELDS END-->" + "\r\n" + 
+"" + "\r\n" + 
+"      </div>" + "\r\n" + 
+"      <br>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"      <div class=\"section\">" + "\r\n" + 
+"        <p> Lines Details</p>" + "\r\n" + 
+"      </div>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"      <div class=\"clr-row\">" + "\r\n" + 
+"        <div class=\"clr-col-lg-12\">" + "\r\n" + 
+"          <table class=\"table\" style=\"width:100%;\" formArrayName=\"book\">" + "\r\n" + 
+"            <thead>" + "\r\n" + 
+"              <tr>" + "\r\n" + 
+"                " + "\r\n" + 
+"                <th class=\"left\" style=\"width:125px;\">Bname</th>" + "\r\n" + 
+"                <th class=\"left\" style=\"width:125px;\">Btitle</th>" + "\r\n" + 
+"                " + "\r\n" + 
+"              </tr>" + "\r\n" + 
+"            </thead>" + "\r\n" + 
+"            <tbody>" + "\r\n" + 
+"              <tr *ngFor=\"let item of controls; let i=index\" [formGroupName]=\"i\">" + "\r\n" + 
+"               " + "\r\n" + 
+"                <td class=\"left\">" + "\r\n" + 
+"                  <input colspan=\"2\" type=\"text\" formControlName=\"bname\" class=\"clr-input\" placeholder=\"Enter name\" />" + "\r\n" + 
+"                </td>" + "\r\n" + 
+"" + "\r\n" + 
+"                <td class=\"left\">" + "\r\n" + 
+"                  <input colspan=\"2\" type=\"text\" formControlName=\"btitle\" class=\"clr-input\" placeholder=\"Enter name\" />" + "\r\n" + 
+"                </td>" + "\r\n" + 
+"" + "\r\n" + 
+"                <td style=\"width:40px;\">" + "\r\n" + 
+"                  <a *ngIf=\"controls.length > 1\" (click)=\"onRemoveLines(i)\">" + "\r\n" + 
+"                    <clr-icon shape=\"trash\" class=\"is-error\"></clr-icon>" + "\r\n" + 
+"                  </a>" + "\r\n" + 
+"                </td>" + "\r\n" + 
+"              </tr>" + "\r\n" + 
+"            </tbody>" + "\r\n" + 
+"            <button type=\"button\" class=\"btn btn-primary button1\" (click)=\"onAddLines()\">" + "\r\n" + 
+"              <clr-icon shape=\"plus\"></clr-icon>" + "\r\n" + 
+"            </button>" + "\r\n" + 
+"          </table>" + "\r\n" + 
+"        </div>" + "\r\n" + 
+"      </div>" + "\r\n" + 
+"      <br>" + "\r\n" + 
+"      <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"!entryForm.valid\">SUBMIT</button>" + "\r\n" + 
+"    </form>" + "\r\n" + 
+"" + "\r\n" + 
+"  </section>" + "\r\n" + 
+"</div>" 

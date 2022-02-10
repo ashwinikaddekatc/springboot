@@ -1,0 +1,34 @@
+<div class="entry-pg pad-16">
+    <h3 class="center"><b>ENTRY FORM</b></h3>
+	
+    <div>
+<a style=" display: block;margin-left: 90%;"    [routerLink]="['../../extension/all']">
+<clr-icon shape="airplane" size="32"></clr-icon></a>   
+ </div>
+
+    <section class="form-block" style="margin-top:32px">
+        <!-- entry form-->
+        <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+            <div class=clr-row>
+			
+			
+			
+			
+			
+			
+			
+			
+			</div>
+			
+			<!-- EXTENSION FIELDS START -->
+<teacher-add-extension [extensionForm]="entryForm"></teacher-add-extension>
+<!-- EXTENSION FIELDS END-->
+
+
+            
+            <br>
+            <button type="submit" class="btn btn-primary" [disabled]="!entryForm.valid">SUBMIT</button>
+        </form>
+    </section>
+
+</div>

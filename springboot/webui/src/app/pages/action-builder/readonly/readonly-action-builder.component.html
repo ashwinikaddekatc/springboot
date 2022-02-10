@@ -1,0 +1,70 @@
+<div class="read-only-pg pad-16">
+  <h3>READ ONLY FORM <a (click)="goToWhoColumns()">
+      <clr-icon shape="help" class="is-solid" size="32"></clr-icon>
+    </a></h3>
+
+  <clr-modal [(clrModalOpen)]="basic">
+    <h3 class="modal-title"><b>Transaction History</b></h3>
+    <div class="modal-body">
+      <table s-header>
+        <tr>
+          <td><b>Account Id: </b></td>
+          <td> {{ actionBuilder_Header.accountId }} </td>
+        </tr>
+        <tr>
+          <td><b>Created By: </b></td>
+          <td> {{ actionBuilder_Header.createdBy }} </td>
+        </tr>
+        <tr>
+          <td><b>Created At: </b></td>
+          <td> {{ actionBuilder_Header.createdAt | date:'medium' }} </td>
+        </tr>
+        <tr>
+          <td><b>Updated At: </b></td>
+          <td> {{ actionBuilder_Header.updatedAt | date:'medium' }} </td>
+        </tr>
+        <tr>
+          <td><b>Updated By: </b></td>
+          <td> {{ actionBuilder_Header.updatedBy }} </td>
+        </tr>
+      </table>
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline" (click)="basic = false">Cancel</button>
+      <button type="button" class="btn btn-primary" (click)="basic = false">Ok</button>
+    </div>
+  </clr-modal>
+  <!-- who column end -->
+
+  <!-- read only form start -->
+  <table class="s-header">
+    <tr>
+      <td>Technology Stack: </td>
+      <td> {{ actionBuilder_Header.technologyStack }} </td>
+    </tr>
+    <tr>
+      <td>Action Name: </td>
+      <td> {{ actionBuilder_Header.actionName }} </td>
+    </tr>
+    <tr>
+      <td>Controller Name: </td>
+      <td> {{ actionBuilder_Header.controllerName }} </td>
+    </tr>
+
+    <tr>
+      <td>Method Name: </td>
+      <td> {{ actionBuilder_Header.methodName }} </td>
+    </tr>
+
+    <tr>
+      <td>Wireframe Name: </td>
+      <td> {{ actionBuilder_Header.rn_fb_header?.uiName}} </td>
+    </tr>
+
+  </table>
+  <br>
+  <button (click)="back()" class="btn btn-primary">
+    <clr-icon shape="caret left"></clr-icon>Back
+  </button>
+</div>

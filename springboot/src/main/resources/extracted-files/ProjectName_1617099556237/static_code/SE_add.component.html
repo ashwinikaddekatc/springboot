@@ -1,0 +1,80 @@
+"<div class=\"entry-pg pad-16\">" + "\r\n" + 
+"    <h3 class=\"center\"><b>SALES GROUP ENTRY FORM</b></h3>" + "\r\n" + 
+"    <div class=\"section\">" + "\r\n" + 
+"        <p> Menu Group Lines Details</p>" + "\r\n" + 
+"    </div>" + "\r\n" + 
+"" + "\r\n" + 
+"    <section class=\"form-block\" style=\"margin-top:32px\">" + "\r\n" + 
+"        <!-- entry form-->" + "\r\n" + 
+"        <form [formGroup]=\"entryForm\" (ngSubmit)=\"onSubmit()\">" + "\r\n" + 
+"            <table>" + "\r\n" + 
+"                <tr>" + "\r\n" + 
+"                    <td style=\"width:125px;\">Name: </td>" + "\r\n" + 
+"                    <td><input id=\"name\" colspan=\"2\" type=\"text\" formControlName=\"name\" placeholder=\"Enter Name\"" + "\r\n" + 
+"                            style=\"width:180px\"></td>" + "\r\n" + 
+"                </tr>" + "\r\n" + 
+"" + "\r\n" + 
+"                <tr>" + "\r\n" + 
+"                    <td style=\"width:125px;\">Department: </td>" + "\r\n" + 
+"                    <td><input id=\"department\" colspan=\"2\" type=\"text\" formControlName=\"department\"" + "\r\n" + 
+"                            placeholder=\"Enter Depertment\" style=\"width:180px\"></td>" + "\r\n" + 
+"                </tr>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"                <tr>" + "\r\n" + 
+"                    <td style=\"width:125px;\">Joining Date: </td>" + "\r\n" + 
+"                    <td><input id=\"joining_date\" colspan=\"2\" type=\"date\" formControlName=\"joining_date\"" + "\r\n" + 
+"                            placeholder=\"Enter joining date\" style=\"width:180px\"></td>" + "\r\n" + 
+"                </tr>" + "\r\n" + 
+"" + "\r\n" + 
+"                <tr>" + "\r\n" + 
+"                    <td style=\"width:125px;\">Status: </td>" + "\r\n" + 
+"                    <td><input id=\"status\" colspan=\"2\" type=\"text\" formControlName=\"status\" placeholder=\"Enter Status\"" + "\r\n" + 
+"                            style=\"width:180px\"></td>" + "\r\n" + 
+"                </tr>" + "\r\n" + 
+"" + "\r\n" + 
+"            </table>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"            <div class=\"section\">" + "\r\n" + 
+"                <p> SALES PERSON LINE DETAILS</p>" + "\r\n" + 
+"            </div>" + "\r\n" + 
+"            <!-----H-L LINE part(FormArray For Multiple Lines)---->" + "\r\n" + 
+"            <div class=\"clr-row\">" + "\r\n" + 
+"                <div class=\"clr-col-lg-12\">" + "\r\n" + 
+"                    <table class=\"table\" style=\"width:100%;\" formArrayName=\"salesPerson\">" + "\r\n" + 
+"                        <thead>" + "\r\n" + 
+"                            <tr>" + "\r\n" + 
+"" + "\r\n" + 
+"                                <th class=\"left\" style=\"width:125px;\">Name</th>" + "\r\n" + 
+"" + "\r\n" + 
+"                            </tr>" + "\r\n" + 
+"                        </thead>" + "\r\n" + 
+"                        <tbody>" + "\r\n" + 
+"                            <tr *ngFor=\"let item of controls; let i=index\" [formGroupName]=\"i\">" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"                                <td>" + "\r\n" + 
+"                                    <input [attr.id]=\"'name' + i\" colspan=\"2\" type=\"text\" formControlName=\"name\"" + "\r\n" + 
+"                                        class=\"clr-input\" placeholder=\"Enter Name\" />" + "\r\n" + 
+"                                </td>" + "\r\n" + 
+"                                <td style=\"width:40px;\">" + "\r\n" + 
+"                                    <a *ngIf=\"controls.length > 1\" (click)=\"onRemoveLines(i)\">" + "\r\n" + 
+"                                        <clr-icon shape=\"trash\" class=\"is-error\"></clr-icon>" + "\r\n" + 
+"                                    </a>" + "\r\n" + 
+"                                </td>" + "\r\n" + 
+"                            </tr>" + "\r\n" + 
+"                        </tbody>" + "\r\n" + 
+"                        <button type=\"button\" class=\"btn btn-primary button1\" (click)=\"onAddLines()\">" + "\r\n" + 
+"                            <clr-icon shape=\"plus\"></clr-icon>" + "\r\n" + 
+"                        </button>" + "\r\n" + 
+"                    </table>" + "\r\n" + 
+"                </div>" + "\r\n" + 
+"            </div>" + "\r\n" + 
+"" + "\r\n" + 
+"            <br>" + "\r\n" + 
+"            <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"!entryForm.valid\">SUBMIT</button>" + "\r\n" + 
+"        </form>" + "\r\n" + 
+"    </section>" + "\r\n" + 
+"" + "\r\n" + 
+"</div>" 

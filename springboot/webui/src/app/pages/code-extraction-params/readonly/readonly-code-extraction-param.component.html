@@ -1,0 +1,97 @@
+<div class="read-only-pg pad-16">
+  <h3>READ ONLY FORM <a (click)="goToWhoColumns()">
+      <clr-icon shape="help"  class="is-solid" size="32"></clr-icon>
+  </a></h3>
+  <!-- who column start -->
+
+
+  <clr-modal [(clrModalOpen)]="basic">
+    <h3 class="modal-title"><b>Transaction History</b></h3>
+    <div class="modal-body">
+      <table s-header>
+        <tr>
+          <td><b>Account Id: </b></td>
+          <td> {{ extractor_param.accountId }} </td>
+        </tr>
+        <tr>
+          <td><b>Created By: </b></td>
+          <td> {{ extractor_param.createdBy }} </td>
+        </tr>
+        <tr>
+          <td><b>Created At: </b></td>
+          <td> {{ extractor_param.createdAt | date:'medium' }} </td>
+        </tr>
+        <tr>
+          <td><b>Updated At: </b></td>
+          <td> {{ extractor_param.updatedAt | date:'medium' }} </td>
+        </tr>
+        <tr>
+          <td><b>Updated By: </b></td>
+          <td> {{ extractor_param.updatedBy }} </td>
+        </tr>
+      </table>
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline" (click)="basic = false">Cancel</button>
+      <button type="button" class="btn btn-primary" (click)="basic = false">Ok</button>
+    </div>
+  </clr-modal>
+  <!-- who column end -->
+  <br />
+  <!-- read only form start -->
+  <table class="s-header">
+    <tr>
+      <td>Technology Stack </td>
+      <td>{{ extractor_param.tech_stack }}</td>
+    </tr>
+   
+    <tr>
+      <td>Object Type </td>
+      <td >{{ extractor_param.object_type }}</td>
+    </tr>
+    <tr>
+      <td>Sub Object Type </td>
+      <td >{{ extractor_param.sub_object_type }}</td>
+    </tr>
+    <tr>
+      <td>File Code </td>
+      <td >{{ extractor_param.file_code }}</td>
+    </tr>
+    <tr>
+      <td>File Name </td>
+      <td >{{ extractor_param.name_string }}</td>
+    </tr>
+    <tr>
+      <td>File Name Variable</td>
+      <td >{{ extractor_param.file_name_var }}</td>
+    </tr>
+    <tr>
+      <td>File Name Dynamic String </td>
+      <td >{{ extractor_param.file_name_dynamic_string }}</td>
+    </tr>
+    <tr>
+      <td>Reference Address </td>
+      <td >{{ extractor_param.reference_address_string }}</td>
+    </tr>
+    <tr>
+      <td>File Description </td>
+      <td >{{ extractor_param.description }}</td>
+    </tr>
+    <tr>
+      <td>Creation Enable Flag </td>
+      <td >{{ extractor_param.is_creation_enabled }}</td>
+    </tr>
+    <tr>
+      <td>Extraction Enable Flag </td>
+      <td >{{ extractor_param.is_extraction_enabled }}</td>
+    </tr>
+    <tr>
+      <td>Total path address string   </td>
+      <td >{{ extractor_param.total_project_path_dynamic_string }}</td>
+    </tr>
+  </table>
+    <button (click)="back()" class="btn btn-primary">
+      <clr-icon shape="caret left"></clr-icon>Back
+    </button>
+</div>

@@ -1,0 +1,22 @@
+<div class="read-only-pg pad-16">
+    <h4>EDIT FORM</h4>
+    <br />
+    <h3>TOYOTA</h3>
+
+    <section class="form-block" style="margin-top:32px">
+        <form (ngSubmit)="onSubmit()">
+            <table>
+                <tr>
+                    <td>name: </td>
+                    <td colspan="2"><input type="text" name="comp1" [(ngModel)]="dynamicForm.comp1"></td>
+                </tr>
+                <tr>
+                    <td>type: </td>
+                    <td colspan="2"><input type="text" name="comp2" [(ngModel)]="dynamicForm.comp2"></td>
+                </tr>
+            </table>
+            <br>
+            <button type="submit" form-control class="btn btn-primary">UPDATE</button>
+        </form>
+    </section>
+</div>

@@ -1,0 +1,137 @@
+"<div class=\"container\">" + "\r\n" + 
+"    <h3 class=\"center\"><b>LINE ONLY ENTRY FORM</b>" + "\r\n" + 
+"    </h3>" + "\r\n" + 
+"" + "\r\n" + 
+"    <div>" + "\r\n" + 
+"        <a style=\" display: block;margin-left: 90%;\" [routerLink]=\"['../../extension/all']\">" + "\r\n" + 
+"            <clr-icon shape=\"airplane\" size=\"32\"></clr-icon>" + "\r\n" + 
+"        </a>" + "\r\n" + 
+"    </div>" + "\r\n" + 
+"" + "\r\n" + 
+"    <!-- Header form start -->" + "\r\n" + 
+"    <br />" + "\r\n" + 
+"" + "\r\n" + 
+"    <div class=\"section\">" + "\r\n" + 
+"        <p> Header </p>" + "\r\n" + 
+"    </div>" + "\r\n" + 
+"    <!-- entry form-->" + "\r\n" + 
+"    <section>" + "\r\n" + 
+"" + "\r\n" + 
+"        <form [formGroup]=\"entryForm\" (ngSubmit)=\"onSubmit()\">" + "\r\n" + 
+"            <div class=\"clr-row\">" + "\r\n" + 
+"                <div class=\"clr-col-lg-12\">" + "\r\n" + 
+"                    <!-- <table class=\"table\" style=\"width:1100%;\" formArrayName=\"department\">" + "\r\n" + 
+"                        <thead>" + "\r\n" + 
+"                            <tr>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"                                <th class=\"left\" style=\"width:125px;\">Dname</th>" + "\r\n" + 
+"                                <th class=\"left\" style=\"width:125px;\">Dhead</th>" + "\r\n" + 
+"                                <th class=\"left\" style=\"width:125px;\">Dcontact</th>" + "\r\n" + 
+"                                <th class=\"left\" style=\"width:125px;\">No_ofEmp</th>" + "\r\n" + 
+"                                " + "\r\n" + 
+"                                " + "\r\n" + 
+"                                <th class=\"right\" style=\"width:125px;\">{{ controls.length > 1 ? 'Actions' : '' }}</th>" + "\r\n" + 
+"" + "\r\n" + 
+"                            </tr>" + "\r\n" + 
+"                        </thead>" + "\r\n" + 
+"                        <tbody>" + "\r\n" + 
+"                            <tr *ngFor=\"let item of controls; let i=index\" [formGroupName]=\"i\">" + "\r\n" + 
+"" + "\r\n" + 
+"                                <td class=\"left\">" + "\r\n" + 
+"" + "\r\n" + 
+"                                    <input colspan=\"2\" type=\"text\" formControlName=\"dname\" class=\"clr-input\"" + "\r\n" + 
+"                                        placeholder=\"Enter name\" />" + "\r\n" + 
+"                                </td>" + "\r\n" + 
+"" + "\r\n" + 
+"                                <td class=\"left\">" + "\r\n" + 
+"" + "\r\n" + 
+"                                    <input colspan=\"2\" type=\"text\" formControlName=\"dhead\" class=\"clr-input\"" + "\r\n" + 
+"                                        placeholder=\"Enter name\" />" + "\r\n" + 
+"                                </td>" + "\r\n" + 
+"" + "\r\n" + 
+"                                <td class=\"left\">" + "\r\n" + 
+"" + "\r\n" + 
+"                                    <input colspan=\"2\" type=\"number\" formControlName=\"dcontact\" class=\"clr-input\"" + "\r\n" + 
+"                                        placeholder=\"Enter contactno\" />" + "\r\n" + 
+"                                </td>" + "\r\n" + 
+"" + "\r\n" + 
+"                                <td class=\"left\">" + "\r\n" + 
+"" + "\r\n" + 
+"                                    <input colspan=\"2\" type=\"number\" formControlName=\"no_ofEmp\" class=\"clr-input\"" + "\r\n" + 
+"                                        placeholder=\"Enter no of emp\" />" + "\r\n" + 
+"                                </td>" + "\r\n" + 
+"" + "\r\n" + 
+"                                " + "\r\n" + 
+"                             " + "\r\n" + 
+"                                <td class=\"left\" form >" + "\r\n" + 
+"                                 <!-- EXTENSION FIELDS START  -->" + "\r\n" + 
+"                                 <!-- <teacher-add-extension [extensionForm]=\"extention\"></teacher-add-extension> -->" + "\r\n" + 
+"                                 <!-- EXTENSION FIELDS END -->" + "\r\n" + 
+"                                <!-- </td> -->" + "\r\n" + 
+"                               " + "\r\n" + 
+"" + "\r\n" + 
+"                    " + "\r\n" + 
+"" + "\r\n" + 
+"                                <!-- <td style=\"width:40px;\">" + "\r\n" + 
+"                                    <a *ngIf=\"controls.length > 1\" (click)=\"onRemoveLines(i)\">" + "\r\n" + 
+"                                        <clr-icon shape=\"trash\" class=\"is-error\"></clr-icon>" + "\r\n" + 
+"                                    </a>" + "\r\n" + 
+"                                </td>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"                            </tr>" + "\r\n" + 
+"                        </tbody>" + "\r\n" + 
+"                        <button type=\"button\" class=\"btn btn-primary button1\" (click)=\"onAddLines()\">" + "\r\n" + 
+"                            <clr-icon shape=\"plus\"></clr-icon>" + "\r\n" + 
+"                        </button>" + "\r\n" + 
+"                    </table> --> " + "\r\n" + 
+"                    <div  formArrayName=\"department\">" + "\r\n" + 
+"                        <div class=\"clr-row\" *ngFor=\"let item of controls; let i=index\" [formGroupName]=\"i\">" + "\r\n" + 
+"                            <div class=\"clr-col-md-2 clr-col-sm-12\"  > <label for=\"\"> Dname</label> " + "\r\n" + 
+"                                <input colspan=\"2\" type=\"text\" formControlName=\"dname\" class=\"clr-input\"" + "\r\n" + 
+"                                        placeholder=\"Enter name\" />" + "\r\n" + 
+"                            </div>" + "\r\n" + 
+"" + "\r\n" + 
+"                            <div class=\"clr-col-md-2 clr-col-sm-12\"  > <label for=\"\"> Dhead</label> " + "\r\n" + 
+"                                <input colspan=\"2\" type=\"text\" formControlName=\"extn1\" class=\"clr-input\"" + "\r\n" + 
+"                                placeholder=\"Enter name\" />" + "\r\n" + 
+"                            </div>" + "\r\n" + 
+"" + "\r\n" + 
+"                           " + "\r\n" + 
+"                                <teacher-add-extension [extensionForm]=\"extention\"></teacher-add-extension>" + "\r\n" + 
+"                            " + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"                            <div class=\"clr-col-md-2 clr-col-sm-12\"  >" + "\r\n" + 
+"                            <a *ngIf=\"controls.length > 1\" (click)=\"onRemoveLines(i)\">" + "\r\n" + 
+"                                <clr-icon shape=\"trash\" class=\"is-error\"></clr-icon>" + "\r\n" + 
+"                            </a>" + "\r\n" + 
+"                        </div>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"                        </div>" + "\r\n" + 
+"" + "\r\n" + 
+"                        <button type=\"button\" class=\"btn btn-primary button1\" (click)=\"onAddLines()\">" + "\r\n" + 
+"                            <clr-icon shape=\"plus\"></clr-icon>" + "\r\n" + 
+"                        </button>" + "\r\n" + 
+"" + "\r\n" + 
+"                    </div>" + "\r\n" + 
+"                " + "\r\n" + 
+"                " + "\r\n" + 
+"                " + "\r\n" + 
+"                </div>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"            </div>" + "\r\n" + 
+"" + "\r\n" + 
+"            <br>" + "\r\n" + 
+"            <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"!entryForm.valid\">SUBMIT</button>" + "\r\n" + 
+"        </form>" + "\r\n" + 
+"    </section>" + "\r\n" + 
+"</div>" 

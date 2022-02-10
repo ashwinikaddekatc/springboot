@@ -1,0 +1,44 @@
+"<div class=\"grid-pg  pad-16\">" + "\r\n" + 
+"    <h3>GRID VIEW</h3>" + "\r\n" + 
+"    <button id=\"add\" class=\"btn btn-primary\" (click)=\"goToAdd()\">" + "\r\n" + 
+"" + "\r\n" + 
+"        <clr-icon shape=\"plus\"></clr-icon>ADD" + "\r\n" + 
+"    </button>" + "\r\n" + 
+"  " + "\r\n" + 
+"    <br>" + "\r\n" + 
+"    <div class=\"row\">" + "\r\n" + 
+"        <div class=\"col-lg-12\">" + "\r\n" + 
+"            <div style=\"width:1140px\">" + "\r\n" + 
+"                <div class=\"s-info-bar\">" + "\r\n" + 
+"                    <!-- FILTER BUTTON-->" + "\r\n" + 
+"                    <input type=\"text\" style=\"padding:8px;margin:15px auto;width:30%;\"" + "\r\n" + 
+"                        placeholder=\"Type to filter the name column...\" (keyup)=\"doFilter($event)\" />" + "\r\n" + 
+"                    <div style=\"flex:1\"></div>" + "\r\n" + 
+"                    <div *ngIf=\"isLoading\" class=\"spinner spinner-md\" style=\"margin:0 10px;\">Loading...</div>" + "\r\n" + 
+"                </div>" + "\r\n" + 
+"                <ngx-datatable #table style='height:450px; width:100%;' [rows]=\"rows\" [columnMode]=\"'force'\"" + "\r\n" + 
+"                    [columnMode]=\"'standard'\" [headerHeight]=\"45\" [footerHeight]=\"45\" [rowHeight]=\"36\"" + "\r\n" + 
+"                    [scrollbarV]=\"true\">" + "\r\n" + 
+"                    <ngx-datatable-column name=\"Actions\" sortable=\"false\">" + "\r\n" + 
+"                        <!-- //readonly action -->" + "\r\n" + 
+"                        <ng-template let-row=\"row\" let-value=\"value\" ngx-datatable-cell-template>" + "\r\n" + 
+"                            <a (click)=\"goToReadOnly(row.id)\">" + "\r\n" + 
+"                                <clr-icon shape=\"eye\" class=\"is-info\"></clr-icon>" + "\r\n" + 
+"                            </a>" + "\r\n" + 
+"                            <!-- uodate action -->" + "\r\n" + 
+"                            <a (click)=\"goToEdit(row.id)\">" + "\r\n" + 
+"                                <clr-icon shape=\"edit\" class=\"is-error\"></clr-icon>" + "\r\n" + 
+"                            </a>" + "\r\n" + 
+"                        </ng-template>" + "\r\n" + 
+"                    </ngx-datatable-column>" + "\r\n" + 
+"" + "\r\n" + 
+"                    <ngx-datatable-column *ngFor=\"let col of columns\" [name]=\"col.name\" [prop]=\"col.prop\"" + "\r\n" + 
+"                        [width]=\"col.width\">" + "\r\n" + 
+"                    </ngx-datatable-column>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"                </ngx-datatable>" + "\r\n" + 
+"            </div>" + "\r\n" + 
+"        </div>" + "\r\n" + 
+"    </div>" + "\r\n" + 
+"</div>" 

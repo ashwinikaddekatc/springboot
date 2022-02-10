@@ -1,0 +1,537 @@
+﻿.selectRowCSS
+     {
+         background-color:#BCC6D7;
+     }
+  /*  .selectTdCSS
+     {
+       background-color:#FFFFFF;
+     }*/
+     
+.ui_table_div
+{
+    width:98%;
+    height:50%;
+    /*overflow-x:scroll;
+    overflow-y:scroll;*/
+   overflow:scroll; 
+   
+    
+}
+
+.ui_table
+{
+    font-family:helvetica;
+    font-weight:normal;
+    font-size:small;
+    width:98%;
+    margin:10px 0px 0px 5px;
+    border: 1px solid #eee; 
+    padding: .6em 10px; 
+    text-align: left; 
+    border-spacing:1px;
+    
+}
+
+.ui_th
+{
+    border: 1px solid #eee; 
+    padding: .6em 10px; 
+    text-align: center; 
+    background-color: #CCCCCC;
+}
+.GridHeader
+{
+    background-image: url('images/gridHeader.png');
+    background-repeat: repeat;
+    height:17px;
+    padding: .6em 10px; 
+    text-align: center; 
+    border-spacing:0px;
+   
+}
+
+.ui_td
+{
+     border: 1px solid #eee; 
+     padding: .6em 10px; 
+     text-align: left; 
+    background-color:White;
+    
+}
+.GridControlsmall
+{
+    height: 12px;
+    border: none;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-family: helvetica;
+    font-weight: normal;
+    font-size: small;
+    background-color: transparent;
+    width: 50px;
+}
+
+.GridControlmedium
+{
+    height: 18px;
+    border: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: helvetica;
+    font-weight: normal;
+    font-size: small;
+    background-color: transparent;
+}
+
+.GridControl
+{
+    height:18px;
+    border:none;
+    padding-left:5px;
+    padding-right:5px;
+    font-family:helvetica;
+    font-weight:normal;
+    font-size:small;
+    background-color: transparent;
+}
+.GridCombo
+{
+    border: 0px solid #CCCCCC;
+    width: 120px;
+     background-color: transparent;
+}
+
+.GridComboSmall
+{
+    border: 0px solid #CCCCCC;
+    width: 80px;
+     background-color: transparent;
+}
+
+.GridComboMedium
+{
+    border: 0px solid #CCCCCC;
+    width: 120px;
+     background-color: transparent;
+}
+
+.GridComboLarge
+{
+    border: 0px solid #CCCCCC;
+    width:200px;
+    background-color: transparent;
+}
+
+.GridComboBigLarge
+{
+    border: 0px solid #CCCCCC;
+    width:270px;
+    background-color: transparent;
+}
+
+#GridTable
+{
+ font-family:helvetica;
+    font-weight:normal;
+    font-size:small;
+width:100%;
+border-collapse:collapse;
+
+overflow-x:scroll;
+overflow-y:scroll;
+}
+#GridTable td
+{  
+    border: 1px solid #C5CFDE;
+    padding: 3px 7px 2px 7px;    
+    text-align: left; 
+    background-color:White;
+}
+#GridTable th
+{
+    
+    text-align: left;
+    color: #000000;
+    background-image: url('images/gridHeader.png');
+    background-repeat: repeat;
+    padding-left:10px;
+    padding-right:10px;
+    height: 14px;
+    white-space:nowrap;
+
+    border-left:2px;
+   
+   border-left:2px solid #BEC7DC;
+
+}
+
+
+.GridTable
+{
+ font-family:helvetica;
+    font-weight:normal;
+    font-size:small;
+width:100%;
+border-collapse:collapse;
+
+overflow-x:scroll;
+overflow-y:scroll;
+}
+.GridTable td
+{  
+    border: 1px solid #C5CFDE;
+    padding: 3px 7px 2px 7px;    
+    text-align: left; 
+   /* background-color:White;*/
+}
+.GridTable th
+{
+    
+    text-align: left;
+    color: #000000;
+    background-image: url('images/gridHeader.png');
+    background-repeat: repeat;
+    padding-left:10px;
+    padding-right:10px;
+    height: 14px;
+    white-space:nowrap;
+
+    border-left:2px;
+   
+   border-left:2px solid #BEC7DC;
+
+}
+
+
+
+#GridTableForToDO
+{
+	
+
+font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:12px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:20px;
+	border:#ccc 1px solid;
+
+ width :170px;
+ margin :-40px 0px 0px -30px;
+/*overflow-x:hidden;
+overflow-y:hidden;*/
+
+
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+
+
+
+}
+
+
+#GridTableForToDO th
+{
+    border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+
+   
+
+}
+
+
+
+#GridTableForToDO tr {
+	text-align: center;
+	padding-left:2px;
+	
+}
+
+
+#GridTableForToDO td
+{  
+  padding:1px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+
+
+#GridTableForToDO  tr:hover td {
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+}
+
+#GridTableForToDO tr.even td {
+    background: -moz-linear-gradient(center top , rgb(248, 248, 248), rgb(246, 246, 246)) repeat scroll 0% 0% transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+.ui_ToDotable_div
+{
+    width:100%;
+    height:90%;
+    overflow-x:scroll;
+    overflow-y:scroll;
+   
+    
+}
+
+
+
+
+
+.SimpleGrid #tabName
+{  
+   background-color:#35496A; color: #FFFFFF; font-weight: bold; font-family: Helvetica;
+   padding-left:5px;
+}
+.SimpleGrid td
+{  
+  /* outline-style:solid;*/
+   outline-width:1px;
+   padding-left:5px;
+}
+.SimpleGrid #tabSrNo
+{
+   
+}
+.SimpleGrid thead
+{
+    
+    outline-style:solid;
+    outline-width:1px;
+    outline-color:#8092AE;
+}
+.SimpleGrid #headRow
+{
+    border: 1px solid #eee;
+    padding: .6em 10px;
+    text-align: center;
+    background-color: #CAD6DF;
+}
+.SimpleGrid tbody
+{
+    outline-style:solid;outline-width:1px;outline-color:#8092AE;
+}
+.SimpleGrid tr:hover td
+{
+    background-color: #CAD6DF;
+}
+.SimpleGrid #headRow:hover
+{
+    background-color: #BACAD6;
+}
+
+
+
+.top_field_box
+{
+    border-style: solid;
+    border-width: 1px 2px 1px 2px;
+    border-color: #839BC2;
+    background-color: #EFEFEF;
+    width: 100%;
+    font-family: Helvetica;
+    font-size: small;
+    
+}
+.top_field_box caption
+{
+border-style: solid solid none solid;  border-width: 2px 2px 0px 2px; border-color: #5082BE; vertical-align:bottom; height:21px; color: #313131; padding:2px 0px 0px 10px; font-weight: bold; text-align: left; font-family: Helvetica; background-color: #CCDAEC;
+}
+.top_field_box td
+{
+    background-color:White;
+}
+.bottom_field_box
+{
+    border-style: solid; border-width: 1px 2px 2px 2px; border-color: #C1C1C1 #839BC2 #839BC2 #839BC2; background-color: #EFEFEF; width:100%;
+}
+.middle_field_box
+{
+    border-style: solid;
+    border-width: 1px 2px 1px 2px;
+    border-color: #839BC2;
+    background-color: #EFEFEF;
+    width: 100%;
+    font-family: Helvetica;
+    font-size: small;
+    
+}
+.middle_field_box caption
+{
+    border-style: none solid none solid; border-width: 2px 2px 0px 2px; border-color: #5082BE; vertical-align:bottom; height:21px; color: #313131; padding:2px 0px 0px 10px; font-weight: bold; text-align: left; font-family: Helvetica; background-color: #CCDAEC;
+}
+.middle_field_box td
+{
+    background-color:White;
+}
+
+.mfb_medium
+{
+    border-style: solid;
+    border-width: 1px 2px 1px 2px;
+    border-color: #839BC2;
+    background-color: #EFEFEF;
+    width: 363px;
+    height: 95px;
+    font-family: Helvetica;
+    font-size: small;
+    position:relative;
+    
+}
+.mfb_medium caption {
+    border-style: none solid;
+    border-width: 2px 2px 0px;
+    border-color: #5082BE;
+    vertical-align: bottom;
+    height: 21px;
+    color: #313131;
+    padding: 2px 0px 0px 10px;
+    font-weight: bold;
+    text-align: left;
+    font-family: Helvetica;
+    background-color: #CCDAEC;
+}
+
+.mfb_medium td
+{
+    background-color:White;
+}
+
+.SearchInput, .SearchSubmit
+{
+	float: left;
+}
+
+.SearchInput
+{
+    padding: 5px 9px;
+    height: 18px;
+    width: 280px;
+    border: 1px solid #a4c3ca;
+    font: normal 13px 'trebuchet MS' , arial, helvetica;
+    background: #f1f1f1;
+    -moz-border-radius: 50px 3px 3px 50px;
+    border-radius: 50px 3px 3px 50px;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+/* ----------------------- */
+
+.SearchSubmit
+{		
+	background: #6cbb6b;
+	background-image: -moz-linear-gradient(#95d788, #6cbb6b);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #6cbb6b),color-stop(1, #95d788));
+	
+	-moz-border-radius: 3px 50px 50px 3px;
+	border-radius: 3px 50px 50px 3px;
+	
+	border-width: 1px;
+	border-style: solid;
+	border-color: #7eba7c #578e57 #447d43;
+	
+	 -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+	 -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+	 box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;   		
+
+	height: 27px;
+	margin: 0 0 0 5px;
+        padding: 0;
+	width: 80px;
+	cursor: pointer;
+	font: bold 14px Arial, Helvetica;
+	color: #23441e;
+	
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.SearchSubmit:hover
+{		
+	background: #95d788;
+	background-image: -moz-linear-gradient(#6cbb6b, #95d788);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #95d788),color-stop(1, #6cbb6b));
+}	
+
+.SearchSubmit:active
+{		
+	background: #95d788;
+	outline: none;
+   
+	 -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+	 -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+	 box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;		
+}
+
+.SearchSubmit::-moz-focus-inner
+{
+       border: 0;  /* Small centering fix for Firefox */
+}
+
+.SearchBox
+{
+    background: #eaf8fc;
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #d4e8ec),color-stop(1, #fff));
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c4d9df #a4c3ca #83afb7;
+    width: auto;
+    height: 30px;
+    padding: 5px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align:middle;
+}
+
+.SelectedTask
+{
+    border: 2px solid #A7B7D1;
+    background-color: #C7D1E2;
+}
+
+.lsm-box.success
+{
+  background-color: #E8F5DF;
+background-image: url('images/success.png');
+border-color: #9ECE9E;
+   
+}
+
+.lsm-box {
+    padding: 10px 10px 10px 60px;
+    border-style: solid;
+    border-width: 1px;
+    background-repeat: no-repeat;
+    clear: both;
+    
+    background-position: 5px 5px;
+}     

@@ -1,0 +1,38 @@
+<!-- //1 -->
+<div class="container">
+    <h3 class="center"><b>Departments Group Edit Form</b></h3>
+    <br />
+
+    <div class="read-only-pg pad-16">
+        <h3>DEPARTMENTS UPDATE FORM</h3>
+        <br />
+
+        <section class="form-block" style="margin-top:32px">
+            <form (ngSubmit)="onSubmit()">
+                <table>
+                    <tr>
+                        <td>Dname: </td>
+                        <td><input colspan="2" type="text" name="name" [(ngModel)]="department.dname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:125px;">Dhead: </td>
+                        <td colspan="2"><input type="text" name="depertment" [(ngModel)]="department.dhead"> </td>
+                    </tr>
+                    <tr>
+                        <td style="width:125px;">Dcontact:</td>
+                        <td colspan="2"><input type="text" name="joining_date" [(ngModel)]="department.dcontact"> </td>
+                    </tr>
+                    <tr>
+                        <td style="width:125px;">EmpCount:</td>
+                        <td colspan="2"><input type="text" name="status" [(ngModel)]="department.empCount"> </td>
+                    </tr>
+                </table>
+                <br>
+
+
+
+                <button type="submit" form-control class="btn btn-primary">UPDATE</button>
+            </form>
+        </section>
+    </div>

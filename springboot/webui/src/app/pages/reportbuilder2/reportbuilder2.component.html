@@ -1,0 +1,31 @@
+<div class="container">
+
+  
+    <h3><b>MENU REGISTER ENTRY FORM</b></h3>
+    <br/>
+
+    <section>
+   
+        <form  (ngSubmit)="reportvalue()">
+
+            <div class="clr-row">
+                <div class="clr-col-md-4 clr-col-sm-12">
+                    <label for="main_menu_name"></label>
+                    <select [(ngModel)]="dropval" name="service_name" class="clr-dropdown"  >
+                        <option  value=null>select service name </option>
+                        <option *ngFor="let item of list" value={{item}}>{{item}}</option>
+                    </select>
+                    
+                    <!-- <input id="main_menu_name" type="text"  ngModel Name="service_name" placeholder="Enter Menu Name"  class="clr-input"> -->
+                
+                </div>
+            </div>
+
+            <div class="btns">
+                <button type="submit" class="btn btn-primary">build report</button>
+            </div>
+            
+            
+        </form>
+    </section>
+</div>

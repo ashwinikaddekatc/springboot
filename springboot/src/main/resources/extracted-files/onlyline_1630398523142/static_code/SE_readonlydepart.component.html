@@ -1,0 +1,75 @@
+"<div class=\"read-only-pg pad-16\">" + "\r\n" + 
+"    <h3>READ ONLY FORM" + "\r\n" + 
+"        <a (click)=\"goToWhoColumns()\">" + "\r\n" + 
+"            <clr-icon shape=\"help\"  class=\"is-solid\" size=\"32\"></clr-icon>" + "\r\n" + 
+"        </a>" + "\r\n" + 
+"    </h3>" + "\r\n" + 
+"    <br />" + "\r\n" + 
+"        <!-- whoo column -->" + "\r\n" + 
+"    <clr-modal [(clrModalOpen)]=\"basic\">" + "\r\n" + 
+"        <h3 class=\"modal-title\"><b>Transaction History</b></h3>" + "\r\n" + 
+"        <div class=\"modal-body\">" + "\r\n" + 
+"            <table s-header>" + "\r\n" + 
+"                <tr>" + "\r\n" + 
+"                    <td>AccountId</td>" + "\r\n" + 
+"                    <td> {{department.accountId}}</td>" + "\r\n" + 
+"                </tr>" + "\r\n" + 
+"                <tr>" + "\r\n" + 
+"                    <td>CreatedAt </td>" + "\r\n" + 
+"                    <td> {{department.createdAt}} </td>" + "\r\n" + 
+"                </tr>" + "\r\n" + 
+"                <tr>" + "\r\n" + 
+"                    <td>CreatedBy </td>" + "\r\n" + 
+"                    <td> {{department.createdBy}} </td>" + "\r\n" + 
+"                </tr>" + "\r\n" + 
+"                <tr>" + "\r\n" + 
+"                    <td>UpdatedAt </td>" + "\r\n" + 
+"                    <td> {{department.updatedAt}} </td>" + "\r\n" + 
+"                </tr>" + "\r\n" + 
+"                <tr>" + "\r\n" + 
+"                    <td>UpdatedBy </td>" + "\r\n" + 
+"                    <td> {{department.updatedBy}} </td>" + "\r\n" + 
+"                </tr>" + "\r\n" + 
+"            </table>" + "\r\n" + 
+"        " + "\r\n" + 
+"        </div>" + "\r\n" + 
+"    </clr-modal>" + "\r\n" + 
+"   " + "\r\n" + 
+"" + "\r\n" + 
+"        <!-- fields start -->" + "\r\n" + 
+"" + "\r\n" + 
+"    <br />" + "\r\n" + 
+"    <table class=\"s-header\">" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td style=\"width:125px\">D_Id</td>" + "\r\n" + 
+"            <td> {{department.did}}</td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td>D_Name </td>" + "\r\n" + 
+"            <td> {{department.dname}} </td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td>D_head </td>" + "\r\n" + 
+"            <td> {{department.dhead}} </td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td>D_contact </td>" + "\r\n" + 
+"            <td> {{department.dcontact }} </td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td>No.of_Emp </td>" + "\r\n" + 
+"            <td> {{department.no_ofEmp}} </td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"" + "\r\n" + 
+"    </table>" + "\r\n" + 
+"" + "\r\n" + 
+"        <!-- EXTENSION FIELDS START -->" + "\r\n" + 
+"     <teacher-readonly-extension [teacherExtension]=\"department\"></teacher-readonly-extension>" + "\r\n" + 
+"     <!-- EXTENSION FIELDS END-->" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"    <br />" + "\r\n" + 
+"    <button (click)=\"back()\" class=\"btn btn-primary\">" + "\r\n" + 
+"        <clr-icon shape=\"caret left\"></clr-icon>Back" + "\r\n" + 
+"    </button>" + "\r\n" + 
+"   </div>" 

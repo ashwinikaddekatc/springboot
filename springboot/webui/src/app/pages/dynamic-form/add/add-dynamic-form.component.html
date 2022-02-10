@@ -1,0 +1,23 @@
+<div class="entry-pg pad-16">
+  <h4><b>ENTRY FORM</b></h4>
+
+  <br />
+  <h3>studen info</h3>
+  <section class="form-block" style="margin-top:32px">
+	<!-- entry form-->
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+          <table>
+<tr>
+                  <td style="width:125px;">ADA: </td>
+                  <td>
+                      <input colspan="2" type="text" formControlName="comp1" placeholder="ADA"
+                          style="width:180px">
+                      </td>
+              </tr>
+
+</table>
+<br>
+          <button type="submit" class="btn btn-primary" [disabled]="!entryForm.valid">SUBMIT</button>
+      </form>
+  </section>
+</div>

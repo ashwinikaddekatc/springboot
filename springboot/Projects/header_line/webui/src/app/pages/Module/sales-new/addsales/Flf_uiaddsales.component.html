@@ -1,0 +1,120 @@
+<div class="container">
+  <h3 class="center"><b>ENTRY FORM</b></h3>
+
+
+  
+
+
+  <!-- Header form start -->
+  <br />
+
+  <div class="section">
+    <p> Header </p>
+  </div>
+  <!-- entry form-->
+  <section>
+
+    <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+
+      <div class="clr-row" style="height: fit-content;">
+
+
+</div> 
+
+      <div class="clr-row" ><div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+                  <label>tech stack: </label>
+                  
+                      <input class="clr-input"  	 style="width:fit-content;" 	colspan="2" type="text"formControlName="tech_stack"  placeholder="Enter tech stack" ></div>
+<div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+                  <label>object_type: </label>
+                  
+                      <input class="clr-input"  	 style="width:fit-content;" 	colspan="2" type="text"formControlName="object_type"  placeholder="Enter object_type" ></div>
+<div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+                  <label>sub_object_type: </label>
+                  
+                      <input class="clr-input"  	 style="width:fit-content;" 	colspan="2" type="text"formControlName="sub_object_type"  placeholder="Enter sub_object_type" ></div>
+
+
+
+
+
+
+        
+
+
+       
+
+      
+      </div>
+      <br>
+
+
+      <div class="section">
+        <p> Lines Details</p>
+      </div>
+
+
+      <div class="clr-row">
+        <div class="clr-col-lg-12">
+          <table class="table" style="width:100%;" formArrayName="salesperson">
+            <thead>
+              <tr>
+                
+ <th class="left" style="width:125px;">operation_type</th>
+ <th class="left" style="width:125px;">field_type</th>
+ <th class="left" style="width:125px;">Code</th>
+ <th class="left" style="width:125px;">file_type</th>
+
+
+
+
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of controls; let i=index" [formGroupName]="i">
+               
+     <td class="left">
+
+        <input colspan="2"  type="text"   formControlName="operation_type" class="clr-input"
+    	  placeholder="enter " />
+      </td>
+     <td class="left">
+
+        <input colspan="2"  type="text"   formControlName="field_type" class="clr-input"
+    	  placeholder="enter " />
+      </td>
+     <td class="left">
+
+        <input colspan="2"  type="text"   formControlName="code" class="clr-input"
+    	  placeholder="enter " />
+      </td>
+     <td class="left">
+
+        <input colspan="2"  type="text"   formControlName="file_type" class="clr-input"
+    	  placeholder="enter " />
+      </td>
+
+
+
+                <td style="width:40px;">
+                  <a *ngIf="controls.length > 1" (click)="onRemoveLines(i)">
+                    <clr-icon shape="trash" class="is-error"></clr-icon>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            <button type="button" class="btn btn-primary button1" (click)="onAddLines()">
+              <clr-icon shape="plus"></clr-icon>
+            </button>
+          </table>
+        </div>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary" [disabled]="!entryForm.valid">SUBMIT</button>
+
+ <button type="button" class="btn btn-primary"  (click)="onClickMe('button2')">button2</button>
+    </form>
+
+  </section>
+</div>

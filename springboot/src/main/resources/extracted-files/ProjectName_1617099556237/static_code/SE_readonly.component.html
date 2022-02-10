@@ -1,0 +1,73 @@
+"<div class=\"read-only-pg pad-16\">" + "\r\n" + 
+"    <h3>READ ONLY FORM</h3>" + "\r\n" + 
+"    <br />" + "\r\n" + 
+"" + "\r\n" + 
+"    <!-- <clr-tabs>" + "\r\n" + 
+"        <clr-tab> -->" + "\r\n" + 
+"    <!-- <clr-tab-content> -->" + "\r\n" + 
+"    <br />" + "\r\n" + 
+"    <table class=\"s-header\">" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td style=\"width:125px\">Id</td>" + "\r\n" + 
+"            <td> {{sales.id}}</td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td>Name </td>" + "\r\n" + 
+"            <td> {{sales.name}} </td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td>Depertment </td>" + "\r\n" + 
+"            <td> {{sales.department}} </td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td>Joining Date </td>" + "\r\n" + 
+"            <td> {{sales.joining_date | date}} </td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"        <tr>" + "\r\n" + 
+"            <td>Status </td>" + "\r\n" + 
+"            <td> {{sales.status}} </td>" + "\r\n" + 
+"        </tr>" + "\r\n" + 
+"" + "\r\n" + 
+"    </table>" + "\r\n" + 
+"    <br />" + "\r\n" + 
+"" + "\r\n" + 
+"    <!-- //line -->" + "\r\n" + 
+"    <div class=\"row\">" + "\r\n" + 
+"        <div class=\"col-lg-12\">" + "\r\n" + 
+"            <table class=\"s-order-line table\" style=\"width:100%;\">" + "\r\n" + 
+"                <thead>" + "\r\n" + 
+"                    <tr>" + "\r\n" + 
+"                        <th class=\"left\" style=\"width:200px;\">Id</th>" + "\r\n" + 
+"" + "\r\n" + 
+"                        <th class=\"left\" style=\"width:200px;\">Name</th>" + "\r\n" + 
+"                        <!-- <th class=\"left\" style=\"width:200px;\">Menu Id</th>" + "\r\n" + 
+"                        <th class=\"left\" style=\"width:200px;\">Order</th>" + "\r\n" + 
+"                        <th class=\"left\" style=\"width:200px;\">Type</th> -->" + "\r\n" + 
+"" + "\r\n" + 
+"                    </tr>" + "\r\n" + 
+"                </thead>" + "\r\n" + 
+"                <!-- //entitis -->" + "\r\n" + 
+"                <tbody *ngIf=\"sales.salesPerson\">" + "\r\n" + 
+"                    <tr *ngFor=\"let salesPerson of sales.salesPerson\">" + "\r\n" + 
+"" + "\r\n" + 
+"                        <td class=\"left\">{{ salesPerson.id }}</td>" + "\r\n" + 
+"                        <td class=\"left\">{{ salesPerson.name }}</td>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"                        <!-- <td class=\"left\">{{ rn_menu_group_line.active }}</td>" + "\r\n" + 
+"                        <td class=\"left\">{{ rn_menu_group_line.menu_id }}</td>" + "\r\n" + 
+"                        <td class=\"left\">{{ rn_menu_group_line.seq }}</td>" + "\r\n" + 
+"                        <td class=\"left\">{{ rn_menu_group_line.type }}</td> -->" + "\r\n" + 
+"" + "\r\n" + 
+"                        <!-- <td class=\"right\">{{ students.createdAt | date:'medium' }}</td>" + "\r\n" + 
+"                        <td class=\"right\">{{ students.updatedAt | date:'medium' }}</td> -->" + "\r\n" + 
+"                    </tr>" + "\r\n" + 
+"                </tbody>" + "\r\n" + 
+"            </table>" + "\r\n" + 
+"        </div>" + "\r\n" + 
+"" + "\r\n" + 
+"        <button (click)=\"back()\" class=\"btn btn-primary\">" + "\r\n" + 
+"            <clr-icon shape=\"caret left\"></clr-icon>Back" + "\r\n" + 
+"        </button>" + "\r\n" + 
+"    </div>" 

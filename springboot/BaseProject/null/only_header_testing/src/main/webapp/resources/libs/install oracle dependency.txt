@@ -1,0 +1,11 @@
+mvn install:install-file -Dfile=F:/github/ris/src/main/webapp/resources/libs/ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0.4 -Dpackaging=jar
+
+OR 
+
+<dependency>
+	<groupId>com.oracle</groupId>
+	<artifactId>ojdbc6</artifactId>
+	<version>11.2.0.4</version>
+	<scope>system</scope>
+	<systemPath>F:/github_30_07/ris/src/main/webapp/resources/libs/ojdbc6.jar</systemPath>
+</dependency>

@@ -1,0 +1,56 @@
+<!-- //1 -->
+<div class="container">
+    <h3 class="center"><b>Builder Group Edit Form</b></h3>
+    <br />
+
+    <div class="read-only-pg pad-16">
+        <h3>Builder UPDATE FORM</h3>
+        <br />
+
+        <section class="form-block" style="margin-top:32px">
+            <form (ngSubmit)="onSubmit()">
+                <table>
+                    <tr>
+                        <td>Form_Id: </td>
+                        <td><input colspan="2" type="number" name="form_id" [(ngModel)]="builder.form_id">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:125px;">Form_version: </td>
+                        <td colspan="2"><input type="number" name="form_version" [(ngModel)]="builder.form_version">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:125px;">Header_Id:</td>
+                        <td colspan="2"><input type="number" name="header_id" [(ngModel)]="builder.header_id"> </td>
+                    </tr>
+                    <tr>
+                        <td style="width:125px;">Com1:</td>
+                        <td colspan="2"><input type="text" name="comp1" [(ngModel)]="builder.comp1"> </td>
+                    </tr>
+                    <tr>
+                        <td style="width:125px;">Com2:</td>
+                        <td colspan="2"><input type="text" name="comp2" [(ngModel)]="builder.comp2"> </td>
+                    </tr>
+                    <tr>
+                        <td style="width:125px;">Com3:</td>
+                        <td colspan="2"><input type="text" name="comp3" [(ngModel)]="builder.comp3"> </td>
+                    </tr>
+                    <tr>
+                        <td style="width:125px;">Com4:</td>
+                        <td colspan="2"><input type="text" name="comp4" [(ngModel)]="builder.comp4"> </td>
+                    </tr>
+                    <tr>
+                        <td style="width:125px;">Com5:</td>
+                        <td colspan="2"><input type="text" name="comp5" [(ngModel)]="builder.comp5"> </td>
+                    </tr>
+
+                </table>
+                <br>
+
+
+
+                <button type="submit" form-control class="btn btn-primary">UPDATE</button>
+            </form>
+        </section>
+    </div>

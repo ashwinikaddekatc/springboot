@@ -1,0 +1,125 @@
+<div class="container">
+  <h3 class="center"><b>ENTRY FORM</b></h3>
+
+
+  <div>
+    <a style=" display: block;margin-left: 90%;" [routerLink]="['../../extension/all']">
+      <clr-icon shape="airplane" size="32"></clr-icon>
+    </a>
+  </div>
+
+
+  <!-- Header form start -->
+  <br />
+
+  <div class="section">
+    <p> Header </p>
+  </div>
+  <!-- entry form-->
+  <section>
+
+    <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+
+      <div class="clr-row" style="height: fit-content;">
+
+
+</div> 
+ <div class="section" style=" background-color: #dddddd; height: 40px;">
+    <p style=" padding: 10px; font-size: 18px;">section1</p>
+  </div>  
+      <div class="clr-row" ><div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+                  <label>techstack: </label>
+                  
+                      <input class="clr-input"  	 style="width:fit-content;" 	colspan="2" type="text"formControlName="techstack"  placeholder="Enter techstack" ></div>
+<div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+                  <label>object_type: </label>
+                  
+                      <input class="clr-input"  	 style="width:fit-content;" 	colspan="2" type="text"formControlName="object_type"  placeholder="Enter object_type" ></div>
+<div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+                  <label>sub_object_type: </label>
+                  
+                      <input class="clr-input"  	 style="width:fit-content;" 	colspan="2" type="text"formControlName="sub_object_type"  placeholder="Enter sub_object_type" ></div>
+<div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+                    <label > isbuild:</label>
+                  <input type="checkbox" clrCheckbox  formControlName="isbuild" 
+                   value="true "  />
+            </div>
+
+        <!-- EXTENSION FIELDS START -->
+        <teacher-add-extension [extensionForm]="entryForm"></teacher-add-extension>
+        <!-- EXTENSION FIELDS END-->
+
+      </div>
+      <br>
+
+
+      <div class="section">
+        <p> Lines Details</p>
+      </div>
+
+
+      <div class="clr-row">
+        <div class="clr-col-lg-12">
+          <table class="table" style="width:100%;" formArrayName="book">
+            <thead>
+              <tr>
+                
+ <th class="left" style="width:125px;">filetype</th>
+ <th class="left" style="width:125px;">formtype</th>
+ <th class="left" style="width:125px;">field_type</th>
+ <th class="left" style="width:125px;">operation_type</th>
+ <th class="left" style="width:125px;">code</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of controls; let i=index" [formGroupName]="i">
+               
+     <td class="left">
+
+            <select      class="clr-dropdown" formControlName="filetype" >
+                <option  value="null">Choose ...</option>
+				   <option *ngFor="let val of dropdownval" value={{val}}>{{val}}</option>              </select>
+      </td>
+     <td class="left">
+
+            <select      class="clr-dropdown" formControlName="formtype" >
+                <option  value="null">Choose ...</option>
+				   <option *ngFor="let val of dropdownval" value={{val}}>{{val}}</option>              </select>
+      </td>
+     <td class="left">
+
+            <select      class="clr-dropdown" formControlName="field_type" >
+                <option  value="null">Choose ...</option>
+				   <option *ngFor="let val of dropdownval" value={{val}}>{{val}}</option>              </select>
+      </td>
+     <td class="left">
+
+            <select      class="clr-dropdown" formControlName="operation_type" >
+                <option  value="null">Choose ...</option>
+				   <option *ngFor="let val of dropdownval" value={{val}}>{{val}}</option>              </select>
+      </td>
+     <td class="left">
+
+                      <textarea  rows="3" cols="40" 	 style="width:fit-content;" 	colspan="2" type="text"formControlName="code"  placeholder="Enter code" ></textarea>
+      </td>
+
+                <td style="width:40px;">
+                  <a *ngIf="controls.length > 1" (click)="onRemoveLines(i)">
+                    <clr-icon shape="trash" class="is-error"></clr-icon>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            <button type="button" class="btn btn-primary button1" (click)="onAddLines()">
+              <clr-icon shape="plus"></clr-icon>
+            </button>
+          </table>
+        </div>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary" [disabled]="!entryForm.valid">SUBMIT</button>
+    </form>
+
+  </section>
+</div>

@@ -1,0 +1,50 @@
+"<div class=\"entry-pg pad-16\">" + "\r\n" + 
+"    <h3 class=\"center\"><b>SALES GROUP ENTRY FORM</b></h3>" + "\r\n" + 
+"	" + "\r\n" + 
+"    <a id=\"build_extension\" [routerLink] = \"['../../extension/all']\">" + "\r\n" + 
+"        <clr-icon shape=\"airplane\" size=\"32\"></clr-icon>" + "\r\n" + 
+"    </a>" + "\r\n" + 
+"" + "\r\n" + 
+"    <section class=\"form-block\" style=\"margin-top:32px\">" + "\r\n" + 
+"        <!-- entry form-->" + "\r\n" + 
+"        <form [formGroup]=\"entryForm\" (ngSubmit)=\"onSubmit()\">" + "\r\n" + 
+"            <table>" + "\r\n" + 
+"                <tr>" + "\r\n" + 
+"                    <td style=\"width:125px;\">Name: </td>" + "\r\n" + 
+"                    <td><input id=\"name\" colspan=\"2\" type=\"text\" formControlName=\"name\" placeholder=\"Enter Name\"" + "\r\n" + 
+"                            style=\"width:180px\"></td>" + "\r\n" + 
+"                </tr>" + "\r\n" + 
+"" + "\r\n" + 
+"                <tr>" + "\r\n" + 
+"                    <td style=\"width:125px;\">Department: </td>" + "\r\n" + 
+"                    <td><input id=\"department\" colspan=\"2\" type=\"text\" formControlName=\"department\"" + "\r\n" + 
+"                            placeholder=\"Enter Depertment\" style=\"width:180px\"></td>" + "\r\n" + 
+"                </tr>" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"                <tr>" + "\r\n" + 
+"                    <td style=\"width:125px;\">Joining Date: </td>" + "\r\n" + 
+"                    <td><input id=\"joining_date\" colspan=\"2\" type=\"date\" formControlName=\"joining_date\"" + "\r\n" + 
+"                            placeholder=\"Enter joining date\" style=\"width:180px\"></td>" + "\r\n" + 
+"                </tr>" + "\r\n" + 
+"" + "\r\n" + 
+"                <tr>" + "\r\n" + 
+"                    <td style=\"width:125px;\">Status: </td>" + "\r\n" + 
+"                    <td><input id=\"status\" colspan=\"2\" type=\"text\" formControlName=\"status\" placeholder=\"Enter Status\"" + "\r\n" + 
+"                            style=\"width:180px\"></td>" + "\r\n" + 
+"                </tr>" + "\r\n" + 
+"" + "\r\n" + 
+"            </table>" + "\r\n" + 
+"			" + "\r\n" + 
+"			<!-- EXTENSION FIELDS START -->" + "\r\n" + 
+"<teacher-add-extension [extensionForm]=\"entryForm\"></teacher-add-extension>" + "\r\n" + 
+"<!-- EXTENSION FIELDS END-->" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"            " + "\r\n" + 
+"            <br>" + "\r\n" + 
+"            <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"!entryForm.valid\">SUBMIT</button>" + "\r\n" + 
+"        </form>" + "\r\n" + 
+"    </section>" + "\r\n" + 
+"" + "\r\n" + 
+"</div>" 

@@ -1,0 +1,18 @@
+"" + "\r\n" + 
+"<definition name=\"Myprojectui_t_grid\" extends=\"acemaster.definition\">" + "\r\n" + 
+"<put-attribute name=\"title\" value=\"WASIB\"/>" + "\r\n" + 
+"<put-attribute name=\"body\" value=\"/WEB-INF/tiles/acemaster/MyProjectModule/Myprojectui_t_grid.jsp\"/>" + "\r\n" + 
+"</definition>" + "\r\n" + 
+"<definition name=\"Myprojectui_t_view\" extends=\"acemaster.definition\">" + "\r\n" + 
+"<put-attribute name=\"title\" value=\"WASIB\"/>" + "\r\n" + 
+"<put-attribute name=\"body\" value=\"/WEB-INF/tiles/acemaster/MyProjectModule/Myprojectui_t_view.jsp\"/>" + "\r\n" + 
+"</definition>" + "\r\n" + 
+"<definition name=\"Myprojectui_t_update\" extends=\"acemaster.definition\">" + "\r\n" + 
+"<put-attribute name=\"title\" value=\"WASIB\"/>" + "\r\n" + 
+"<put-attribute name=\"body\" value=\"/WEB-INF/tiles/acemaster/MyProjectModule/Myprojectui_t_update.jsp\"/>" + "\r\n" + 
+"</definition>" + "\r\n" + 
+"<definition name=\"Myprojectui_t_readonly\" extends=\"acemaster.definition\">" + "\r\n" + 
+"<put-attribute name=\"title\" value=\"WASIB\"/>" + "\r\n" + 
+"<put-attribute name=\"body\" value=\"/WEB-INF/tiles/acemaster/MyProjectModule/Myprojectui_t_readonly.jsp\"/>" + "\r\n" + 
+"</definition>" + "\r\n" + 
+"</tiles-definitions>" 

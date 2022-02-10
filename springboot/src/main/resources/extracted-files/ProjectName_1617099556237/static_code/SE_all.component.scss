@@ -1,0 +1,33 @@
+"//@import '../../../../../assets/scss/var';" + "\r\n" + 
+".s-info-bar {" + "\r\n" + 
+"    display: flex;" + "\r\n" + 
+"    flex-direction: row;" + "\r\n" + 
+"    justify-content: space-between;" + "\r\n" + 
+"    button {" + "\r\n" + 
+"        outline: none;" + "\r\n" + 
+"    }" + "\r\n" + 
+"}" + "\r\n" + 
+"" + "\r\n" + 
+".grid-pg {" + "\r\n" + 
+"    width:750px;" + "\r\n" + 
+"}" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"#add {" + "\r\n" + 
+"    position:absolute;" + "\r\n" + 
+"    //position: fixed !important;" + "\r\n" + 
+"    transition: .5s ease;" + "\r\n" + 
+"    top: 16%; " + "\r\n" + 
+"    left: 79%; " + "\r\n" + 
+"}" + "\r\n" + 
+"" + "\r\n" + 
+"#who_column {" + "\r\n" + 
+"    position:absolute;" + "\r\n" + 
+"    //position: fixed !important;" + "\r\n" + 
+"    transition: .5s ease;" + "\r\n" + 
+"    //top: 16%; // 28 down // barale niche nambe" + "\r\n" + 
+"    //left: 13%; // komale left e jabe" + "\r\n" + 
+"    top: 97px; // barale niche" + "\r\n" + 
+"    left: 145px; // barale dan" + "\r\n" + 
+"" + "\r\n" + 
+"}" 

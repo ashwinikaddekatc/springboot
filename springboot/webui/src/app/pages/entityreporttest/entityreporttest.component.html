@@ -1,0 +1,18 @@
+
+    <div style="padding: 2px 2px; font-size: 15px; border-radius: 10px;"  >
+        <button type="button" (click)="runreport('entityreporttestapi')" class="btn btn-primary">Run Report</button>
+</div>
+<div class="section">
+        <p> Query Result </p>
+  </div>
+
+  <div class="pad-16">
+
+    <ngx-datatable  class="data"
+        style='width:1200px;'
+        [rows]="rows"
+        [columns]="columns">
+    </ngx-datatable>
+
+
+</div>

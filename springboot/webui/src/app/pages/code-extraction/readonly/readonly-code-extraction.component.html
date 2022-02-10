@@ -1,0 +1,120 @@
+<div class="read-only-pg pad-16">
+    <h3>READ ONLY FORM 
+        <a (click)="goToWhoColumns()">
+           <clr-icon shape="help"  class="is-solid" size="32"></clr-icon>
+        </a>
+    </h3>
+  <!-- who column start -->
+  
+
+  <clr-modal [(clrModalOpen)]="basic">
+      <h3 class="modal-title"><b>Transaction History</b></h3>
+      <div class="modal-body">
+          <table s-header>
+              <tr>
+                  <td><b>Account Id: </b></td>
+                  <td> {{ bcf_Extractor.accountId }} </td>
+              </tr>
+              <tr>
+                  <td><b>Created By: </b></td>
+                  <td> {{ bcf_Extractor.createdBy }} </td>
+              </tr>
+              <tr>
+                  <td><b>Created At: </b></td>
+                  <td> {{ bcf_Extractor.createdAt | date:'medium' }} </td>
+              </tr>
+              <tr>
+                  <td><b>Updated At: </b></td>
+                  <td> {{ bcf_Extractor.updatedAt | date:'medium' }} </td>
+              </tr>
+              <tr>
+                  <td><b>Updated By: </b></td>
+                  <td> {{ bcf_Extractor.updatedBy }} </td>
+              </tr>
+          </table>
+          
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-outline" (click)="basic = false">Cancel</button>
+          <button type="button" class="btn btn-primary" (click)="basic = false">Ok</button>
+      </div>
+  </clr-modal>
+  <!-- who column end -->
+  <br/>
+  <!-- read only form start -->
+  <table class="s-header">
+      <tr>
+          <td>Technology Stack </td>
+          <td> {{ bcf_Extractor.tech_stack }} </td>
+      </tr>
+      <tr>
+          <td>Technology Stack Key </td>
+          <td> {{ bcf_Extractor.tech_stack_key }} </td>
+      </tr>
+      <tr>
+          <td>Object Type </td>
+          <td> {{ bcf_Extractor.object_type }} </td>
+      </tr>
+      <tr>
+          <td>Sub Object Type </td>
+          <td> {{ bcf_Extractor.sub_object_type }} </td>
+      </tr>
+      <tr>
+          <td>WireFrame Name </td>
+          <td> {{ bcf_Extractor.std_wf_name }} </td>
+      </tr>
+      <tr>
+        <td>Zip File Name </td>
+        <td> {{ bcf_Extractor.sample_file_name }} </td>
+    </tr>
+  </table>
+  <div class="row">
+      <div class="col-lg-12">
+          <table class="s-order-line table" style="width:100%;">
+              <thead>
+                  <tr>
+                      <th class="left" style="width:200px;">Actions</th>
+                      <th class="left" style="width:200px;">Technology Stack</th>
+                      <th class="left" style="width:200px;">Object Type</th>
+                      <th class="left" style="width:200px;">Sub Object Type</th>
+                      <th class="left" style="width:200px;">File Code</th>
+                      <th class="left" style="width:200px;">Name String</th>
+                      <th class="left" style="width:200px;">File Name Variable</th>
+                      <th class="left" style="width:200px;">File Name Dynamic String</th>
+                      <th class="left" style="width:200px;">Reference Address String</th>
+                      <th class="left" style="width:200px;">Description</th>
+                      <th class="left" style="width:200px;">is_creation_enabled</th>
+                      <th class="left" style="width:200px;">is_extraction_enabled</th>
+                      <!-- <th class="right" style="width:150px;">Who Column</th> -->
+                      
+                  </tr>
+              </thead>
+              <tbody *ngIf="bcf_Extractor.rn_bcf_extractor_Params">
+                  <tr *ngFor="let extractor_param of bcf_Extractor.rn_bcf_extractor_Params">
+                    <td class="left">
+                      <a (click)="goToEdit(extractor_param.id)"><clr-icon shape="eye"  class="is-info"></clr-icon></a>
+                    </td>
+                      <td class="left">{{ extractor_param.tech_stack }}</td>
+                      <td class="left">{{ extractor_param.object_type }}</td>
+                      <td class="left">{{ extractor_param.sub_object_type }}</td>
+                      <td class="left">{{ extractor_param.file_code }}</td>
+                      <td class="left">{{ extractor_param.name_string }}</td>
+                       <!-- this will be updatable -->
+                      <td class="left">{{ extractor_param.file_name_var }}</td>
+                      <td class="left">{{ extractor_param.file_name_dynamic_string }}</td>
+
+                      <td class="left">{{ extractor_param.reference_address_string }}</td>
+                      <td class="left">{{ extractor_param.description }}</td>
+                      <td class="left">{{ extractor_param.is_creation_enabled }}</td>
+                      <td class="left">{{ extractor_param.is_extraction_enabled }}</td>
+                      <!-- <td class="right">{{ students.createdAt | date:'medium' }}</td>
+                      <td class="right">{{ students.updatedAt | date:'medium' }}</td> -->
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+      <button (click)="back()" class="btn btn-primary">
+          <clr-icon shape="caret left"></clr-icon>Back
+      </button>
+  </div>
+</div>

@@ -1,0 +1,120 @@
+<div class="container">
+  <div class="section" style="width: fit-content;">
+    <p>EDIT FORM</p>
+  </div>
+  <br>
+  <form (ngSubmit)="onSubmit()">
+    <div class="clr-row">
+
+
+      <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+        <label>techstack: </label>
+
+      <input class="clr-input" style="width:fit-content;" type="text" name="techstack"
+
+          placeholder="Enter techstack">
+      </div>
+      <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+        <label>object_type: </label>
+
+        <input class="clr-input" style="width:fit-content;" type="text" name="object_type"
+           placeholder="Enter object_type">
+      </div>
+
+      <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+        <label>sub_object_type: </label>
+
+        <input class="clr-input" style="width:fit-content;" type="text" name="sub_object_type"
+          placeholder="Enter sub_object_type">
+      </div>
+
+      <div class="clr-col-md-4 clr-col-sm-12" style="margin-bottom: 20px;">
+        <label> isbuild:</label>
+        <input type="checkbox" clrCheckbox  name="isbuild" value="true " />
+      </div>
+
+      <div class="clr-col-md-2 clr-col-sm-12">
+        <button type="button"  class="btn btn-primary button1">BUILD</button>
+       </div>
+
+
+
+    </div>
+    <br>
+
+
+    <div class="section" style="width: fit-content;">
+      <p>Menu Group Lines Details</p>
+    </div>
+
+    <!-----H-L LINE part(FormArray For Multiple Lines)---->
+
+    <div class="clr-row">
+      <div class="clr-col-lg-12">
+        <table id="lines" class="table" style="width:100%;">
+          <thead>
+            <tr>
+              <th class="left" style="width:125px;">filetype</th>
+              <th class="left" style="width:125px;">formtype</th>
+              <th class="left" style="width:125px;">field_type</th>
+              <th class="left" style="width:125px;">operation_type</th>
+              <th class="left" style="width:125px;">code</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let person of sales">
+              <td class="left">
+
+                <select class="clr-dropdown" [(ngModel)]="person.filetype" name="filetype">
+                  <option value="null">Choose ...</option>
+                  <option *ngFor="let val of file_type" value={{val}}>{{val}}</option>
+                </select>
+
+
+              </td>
+              <td class="left">
+
+                <select class="clr-dropdown" [(ngModel)]="person.formtype" name="formtype">
+                  <option value="null">Choose ...</option>
+                  <option *ngFor="let val of form_type" value={{val}}>{{val}}</option>
+                </select>
+
+              </td>
+              <td class="left">
+
+
+                <select class="clr-dropdown" [(ngModel)]="person.field_type" name="field_type">
+                  <option value="null">Choose ...</option>
+                  <option *ngFor="let val of typeFields" value={{val}}>{{val}}</option>
+                </select>
+
+              </td>
+              <td class="left">
+
+                <select class="clr-dropdown"  [(ngModel)]="person.operation_type" name="operation_type">
+                  <option value="null">Choose ...</option>
+                  <option *ngFor="let v of operation_type" value={{v}}>{{v}}</option>
+                </select>
+
+
+
+              </td>
+              <td class="left">
+
+                <textarea rows="3" cols="40" style="width:fit-content;" colspan="2" type="text"
+                  [(ngModel)]="person.code" name="code" placeholder="Enter code"></textarea>
+              </td>
+
+
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+
+
+    <button type="submit" form-control class="btn btn-primary">UPDATE</button>
+  </form>
+</div>

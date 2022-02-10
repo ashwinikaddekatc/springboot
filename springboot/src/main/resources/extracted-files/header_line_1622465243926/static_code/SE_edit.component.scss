@@ -1,0 +1,72 @@
+"" + "\r\n" + 
+".s-info-bar{" + "\r\n" + 
+"    display:flex;" + "\r\n" + 
+"    flex-direction: row;" + "\r\n" + 
+"    justify-content:space-between;" + "\r\n" + 
+"    button{outline:none;}" + "\r\n" + 
+"}" + "\r\n" + 
+"" + "\r\n" + 
+".edit-pg {" + "\r\n" + 
+"    width:750px;" + "\r\n" + 
+"}" + "\r\n" + 
+"" + "\r\n" + 
+"#lines {" + "\r\n" + 
+"    table, th, td {" + "\r\n" + 
+"    border: 0.5px solid  #f1f0f0;" + "\r\n" + 
+"    border-collapse: collapse;" + "\r\n" + 
+"  }" + "\r\n" + 
+"  input, input :focus {" + "\r\n" + 
+"    //-webkit-appearance: none;" + "\r\n" + 
+"    outline: none;" + "\r\n" + 
+"    border-width:0px;" + "\r\n" + 
+"    border:none;" + "\r\n" + 
+"  }" + "\r\n" + 
+"}" + "\r\n" + 
+"" + "\r\n" + 
+".clr-input {" + "\r\n" + 
+"  color: #212529;" + "\r\n" + 
+"  border: 1px solid #ced4da;" + "\r\n" + 
+"  border-radius: 0.25rem;" + "\r\n" + 
+"  padding: 0.75rem 0.75rem;" + "\r\n" + 
+"  margin-top: 3px;" + "\r\n" + 
+"  width: fit-content;" + "\r\n" + 
+"  margin-bottom: 10px;" + "\r\n" + 
+"}" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"" + "\r\n" + 
+"$bg-color: #dddddd;" + "\r\n" + 
+".section {" + "\r\n" + 
+"  background-color: $bg-color;" + "\r\n" + 
+"  height: 40px;" + "\r\n" + 
+"}" + "\r\n" + 
+"" + "\r\n" + 
+".section p {" + "\r\n" + 
+"  //color: white;" + "\r\n" + 
+"  padding: 10px;" + "\r\n" + 
+"  font-size: 18px;" + "\r\n" + 
+"}" + "\r\n" + 
+"#doj{" + "\r\n" + 
+" " + "\r\n" + 
+" " + "\r\n" + 
+"  margin: 10px;" + "\r\n" + 
+"  padding: 5px;" + "\r\n" + 
+"}" + "\r\n" + 
+"" + "\r\n" + 
+"#build_extension {" + "\r\n" + 
+"  cursor:pointer;" + "\r\n" + 
+" padding: 95% ;" + "\r\n" + 
+"  transition: .5s ease;" + "\r\n" + 
+"  top: 97px; // barale niche" + "\r\n" + 
+"  // left: 665px; // barale dan" + "\r\n" + 
+"  right: 623px; // barale bam" + "\r\n" + 
+"  text-align: right;" + "\r\n" + 
+"" + "\r\n" + 
+"}" + "\r\n" + 
+"#select" + "\r\n" + 
+"{" + "\r\n" + 
+"    width: 200px;" + "\r\n" + 
+"}" + "\r\n" + 
+"option{" + "\r\n" + 
+"  border: 5px solid;" + "\r\n" + 
+"}" 

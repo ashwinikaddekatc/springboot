@@ -1,0 +1,210 @@
+<div class="entry-pg pad-16">
+    <h3 class="center"><b>SINGLE LINE ENTRY FORM</b></h3>
+    <!-- <div class="section">
+        <p> Single Lines Details</p>
+    </div> -->
+
+    <section class="form-block" style="margin-top:32px">
+        <!-- entry form-->
+        <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+
+            <div class="clr-row">
+                <div class="clr-col-lg-12">
+                    <table class="table" style="width:100%;" formArrayName="builder">
+                        <thead>
+                            <tr>
+                                <th class="left" style="width:125px;">Form_id</th>
+                                <th class="left" style="width:125px;">Form_version</th>
+                                <th class="left" style="width:125px;">Header_id</th>
+                                <th class="left" style="width:125px;">Comp1</th>
+                                <th class="left" style="width:125px;">Comp2</th>
+                                <th class="left" style="width:125px;">Comp3</th>
+                                <th class="left" style="width:125px;">Comp4</th>
+                                <th class="left" style="width:125px;">Comp5</th>
+                                <th class="left" style="width:125px;">Comp6</th>
+                                <th class="left" style="width:125px;">Comp7</th>
+                                <th class="left" style="width:125px;">Comp8</th>
+                                <th class="left" style="width:125px;">Comp9</th>
+                                <th class="left" style="width:125px;">Comp10</th>
+                                <th class="left" style="width:125px;">Comp11</th>
+                                <th class="left" style="width:125px;">Comp12</th>
+                                <th class="left" style="width:125px;">Comp13</th>
+                                <th class="left" style="width:125px;">Comp14</th>
+                                <th class="left" style="width:125px;">Comp15</th>
+                                <th class="left" style="width:125px;">Comp16</th>
+                                <th class="left" style="width:125px;">Comp17</th>
+                                <th class="left" style="width:125px;">Comp18</th>
+                                <th class="left" style="width:125px;">Comp19</th>
+                                <th class="left" style="width:125px;">Comp20</th>
+                                <th class="left" style="width:125px;">Comp21</th>
+                                <th class="left" style="width:125px;">Comp22</th>
+                                <th class="left" style="width:125px;">Comp23</th>
+                                <th class="left" style="width:125px;">Comp24</th>
+                                <th class="left" style="width:125px;">Comp25</th>
+                                <th class="left" style="width:125px;">Comp26</th>
+                                <th class="left" style="width:125px;">Comp27</th>
+                                <th class="left" style="width:125px;">Comp28</th>
+                                <th class="left" style="width:125px;">Comp29</th>
+                                <th class="left" style="width:125px;">Comp30</th>
+
+
+
+                                <th class="right" style="width:125px;">{{ controls.length > 1 ? 'Actions' : '' }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of controls; let i=index" [formGroupName]="i">
+                                <td class="left">
+                                    <input type="number" [attr.id]="'label' + i" formControlName="form_id"
+                                        placeholder="Enter form id" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="number" [attr.id]="'label' + i" formControlName="form_version"
+                                        placeholder="Enter Head" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="number" [attr.id]="'label' + i" formControlName="header_id"
+                                        placeholder="Enter Contact" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp1"
+                                        placeholder="Enter Com1" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp2"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp3"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp4"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp5"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp6"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp7"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp8"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp9"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp10"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp11"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp12"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp13"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp14"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp15"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp16"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp17"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp18"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp19"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp20"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp21"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp22"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp23"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp24"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp25"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp_l26"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp_l27"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp_l28"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp_l29"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+                                <td class="left">
+                                    <input type="text" [attr.id]="'label' + i" formControlName="comp_l30"
+                                        placeholder="Enter Count" style="width:180px" class="clr-input">
+                                </td>
+
+
+                                <td style="width:40px;">
+                                    <a *ngIf="controls.length > 1" (click)="onRemoveLines(i)">
+                                        <clr-icon shape="trash" class="is-error"></clr-icon>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <button type="button" class="btn btn-primary button1" (click)="onAddLines()">
+                            <clr-icon shape="plus"></clr-icon>
+                        </button>
+                    </table>
+                </div>
+            </div>
+            <br>
+
+            <button type="submit" class="btn btn-primary" [disabled]="!entryForm.valid">SUBMIT</button>
+        </form>
+    </section>
+
+</div>

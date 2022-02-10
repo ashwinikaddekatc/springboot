@@ -1,0 +1,339 @@
+ ************************************************************************
+ **                                                                    **
+ **                                                                    **
+ **                        OptiStruct 12.0.210                         **
+ **                                                                    **
+ **                  Design and Optimization Software                  **
+ **                   from Altair Engineering, Inc.                    **
+ **                                                                    **
+ **                                                                    **
+ **          Windows 7 Workstation  SP1 (Build 7601)  BLRP276          **
+ **          4 CPU:  Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz          **
+ **                        CPU speed  2500 MHz                         **
+ **                    4454 MB RAM,  16295 MB swap                     **
+ **                                                                    **
+ ** Build tag: 0682690_5533120_Ce64RBW8UH12M:82341-000  4000000014000  **
+ ************************************************************************
+ **  COPYRIGHT (C) 1996-2013                 Altair Engineering, Inc.  **
+ ** All Rights Reserved.  Copyright notice does not imply publication. **
+ **         Contains trade secrets of Altair Engineering, Inc.         **
+ ** Decompilation or disassembly of this software strictly prohibited. **
+ ************************************************************************
+ 
+  
+ *** OptiStruct defaults set from:
+   install config file: C:\Program Files\Altair\12.0.1\/hwsolvers/optistruct.cfg.
+  
+
+ NOTE # 9199
+ MSGLMT=STRICT is active, all messages will be printed.
+ You can suppress some less important warning messages by use of
+  MSGLMT=BRIEF or UNREF (in config file or in the input data).
+
+ NOTE # 1987
+ When prescribing CLEARANCE, carefully select contact zone and SRCHDIS 
+ to involve only the desired Slave/Master pairs.
+
+ *** WARNING # 1908
+ Case Control data LOAD,3 
+ is not referenced by any bulk data.
+ 
+
+************************************************************************
+
+OPTIMIZATION FILE AND PARAMETER INFORMATION :
+---------------------------------------------
+
+  FEM model file               : 
+     E:/Interferance_fit_example/PCONT/Interferance_fit_pcont.fem
+  Output files prefix          : 
+     E:/Interferance_fit_example/PCONT/Interferance_fit_pcont
+  Model read from files:
+    E:/Interferance_fit_example/PCONT/Interferance_fit_pcont.fem
+
+************************************************************************
+
+ 
+
+************************************************************************
+
+FINITE ELEMENT MODEL DATA INFORMATION :
+---------------------------------------
+
+  Total # of Grids (Structural)        :     27363
+  Total # of Elements                  :     28827
+  Total # of Degrees of Freedom        :     94284
+  Total # of Non-zero Stiffness Terms  :   4864635
+
+ 
+  Element Type Information
+  ------------------------
+
+   CHEXA    Elements   :    23640
+
+  Load and Boundary Information
+  -----------------------------
+
+   FORCE Sets        :         1
+   SPC   Sets        :         1
+
+  Material and Property Information
+  ---------------------------------
+
+   PSOLID Cards      :         1
+   PCONT  Cards      :         1
+   MAT1   Cards      :         1
+
+************************************************************************
+
+ 
+
+************************************************************************
+
+OPTIMIZATION PROBLEM PARAMETERS :
+---------------------------------
+
+ NO DESIGN MATERIAL OR DESIGN VARIABLES FOUND  : ANALYSIS ONLY
+
+   ------------------------
+   Static Subcase Summary :
+   ------------------------
+
+   ----------   --------  --------
+   Subcase ID    SPC ID   FORCE ID
+   ----------   --------  --------
+          2            1         3
+   ----------   --------  --------
+
+   Run Type                        :   Analysis Only
+   Scratch file directory          : ./
+                                     Free space:  51781 MB
+   Number of CPU processors        :          1
+
+
+************************************************************************
+
+ 
+
+************************************************************************
+
+MEMORY ESTIMATION INFORMATION :
+-------------------------------
+
+ Solver Type is:  Sparse-Matrix Solver
+                  Direct Method
+ 
+ Current Memory (RAM)                                    :     315 MB
+ Estimated Minimum Memory (RAM) for Out of Core Solution :     279 MB
+ Recommended Memory (RAM) for Out of Core Solution       :     315 MB
+ Recommended Memory (RAM) for In-Core Solution           :    1214 MB
+ 
+DISK SPACE ESTIMATION INFORMATION :
+-----------------------------------
+
+ Estimated Disk Space for Output Data Files              :       8 MB
+ Estimated Scratch Disk Space for In-Core Solution       :     101 MB
+ Estimated Scratch Disk Space for Out of Core Solution   :    1521 MB
+
+************************************************************************
+
+
+BEGINNING ANALYSIS SOLUTION ....
+
+
+************************************************************************
+
+ANALYSIS RESULTS :
+------------------
+
+
+ITERATION   0
+
+ *** WARNING # 1955
+ Static Loadcase 2 has zero static force vector.
+  This typically produces zero solution and zero compliance.
+
+		Auto-SPC d. o. f.s for loadcase   2
+ 		Number of Auto-SPC d. o. f.s = 15561
+  
+ 		------------------------------
+ 		  Grid No.         Component
+ 		------------------------------
+ 		       115             4 5 6
+ 		       116             4 5 6
+ 		       117             4 5 6
+ 		       118             4 5 6
+ 		       119             4 5 6
+ 		       120             4 5 6
+ 		       121             4 5 6
+ 		       122             4 5 6
+ 		       123             4 5 6
+ 		       124             4 5 6
+ 		       125             4 5 6
+ 		       126             4 5 6
+ 		       127             4 5 6
+ 		       128             4 5 6
+ 		       129             4 5 6
+ 		       130             4 5 6
+ 		       131             4 5 6
+ 		       132             4 5 6
+ 		       133             4 5 6
+ 		       134             4 5 6
+ 		       135             4 5 6
+ 		       136             4 5 6
+ 		       137             4 5 6
+ 		       138             4 5 6
+ 		       139             4 5 6
+ 		       140             4 5 6
+ 		       141             4 5 6
+ 		       142             4 5 6
+ 		       143             4 5 6
+ 		       144             4 5 6
+ 		       145             4 5 6
+ 		       146             4 5 6
+ 		       147             4 5 6
+ 		       148             4 5 6
+ 		------------------------------
+
+		Because of PARAM, PRGPST, 100, Auto-SPC printing is limited to 100 dofs.
+  
+
+        NONLINEAR  ITERATION  SUMMARY FOR    Subcase        2
+
+  Subcase         2
+  LOAD STEP: 0.1000
+--------------------------------------------------------------------------------
+               Nonlinear Error Measures  Gap and Contact Element Status  Maximum
+ Iter Avg. U    EUI      EPI      EWI    Open Closed Stick Slip Frozen  Plststrn
+--------------------------------------------------------------------------------
+  1  8.40E-07 9.90E+01 1.71E-02 1.71E-02  1665  3522     0     0     0  0.00E+00
+  2  8.51E-07 2.67E-02 4.38E+00 1.42E-01  2207  2980     0     0     0  0.00E+00
+  3  8.53E-07 9.13E-04 7.24E-01 2.78E-03  2186  3001     0     0     0  0.00E+00
+  4  8.53E-07 9.34E-06 5.80E-11 4.62E-15  2186  3001     0     0     0  0.00E+00
+
+  Subcase         2
+  LOAD STEP: 0.2000
+--------------------------------------------------------------------------------
+               Nonlinear Error Measures  Gap and Contact Element Status  Maximum
+ Iter Avg. U    EUI      EPI      EWI    Open Closed Stick Slip Frozen  Plststrn
+--------------------------------------------------------------------------------
+  1  1.71E-06 4.95E+01 5.74E-11 2.87E-11  2186  3001     0     0     0  0.00E+00
+  2  1.71E-06 7.57E-12 5.78E-11 8.02E-22  2186  3001     0     0     0  0.00E+00
+
+  Subcase         2
+  LOAD STEP: 0.3000
+--------------------------------------------------------------------------------
+               Nonlinear Error Measures  Gap and Contact Element Status  Maximum
+ Iter Avg. U    EUI      EPI      EWI    Open Closed Stick Slip Frozen  Plststrn
+--------------------------------------------------------------------------------
+  1  2.56E-06 3.30E+01 6.10E-11 2.03E-11  2186  3001     0     0     0  0.00E+00
+  2  2.56E-06 6.13E-12 6.12E-11 7.22E-22  2186  3001     0     0     0  0.00E+00
+
+  Subcase         2
+  LOAD STEP: 0.4000
+--------------------------------------------------------------------------------
+               Nonlinear Error Measures  Gap and Contact Element Status  Maximum
+ Iter Avg. U    EUI      EPI      EWI    Open Closed Stick Slip Frozen  Plststrn
+--------------------------------------------------------------------------------
+  1  3.41E-06 2.47E+01 5.78E-11 1.44E-11  2186  3001     0     0     0  0.00E+00
+  2  3.41E-06 8.33E-12 5.79E-11 8.84E-22  2186  3001     0     0     0  0.00E+00
+
+  Subcase         2
+  LOAD STEP: 0.5000
+--------------------------------------------------------------------------------
+               Nonlinear Error Measures  Gap and Contact Element Status  Maximum
+ Iter Avg. U    EUI      EPI      EWI    Open Closed Stick Slip Frozen  Plststrn
+--------------------------------------------------------------------------------
+  1  4.26E-06 1.98E+01 5.75E-11 1.15E-11  2186  3001     0     0     0  0.00E+00
+  2  4.26E-06 5.54E-12 5.75E-11 6.04E-22  2186  3001     0     0     0  0.00E+00
+
+  Subcase         2
+  LOAD STEP: 0.6000
+--------------------------------------------------------------------------------
+               Nonlinear Error Measures  Gap and Contact Element Status  Maximum
+ Iter Avg. U    EUI      EPI      EWI    Open Closed Stick Slip Frozen  Plststrn
+--------------------------------------------------------------------------------
+  1  5.12E-06 1.65E+01 6.12E-11 1.02E-11  2186  3001     0     0     0  0.00E+00
+  2  5.12E-06 3.08E-12 6.07E-11 3.95E-22  2186  3001     0     0     0  0.00E+00
+
+  Subcase         2
+  LOAD STEP: 0.7000
+--------------------------------------------------------------------------------
+               Nonlinear Error Measures  Gap and Contact Element Status  Maximum
+ Iter Avg. U    EUI      EPI      EWI    Open Closed Stick Slip Frozen  Plststrn
+--------------------------------------------------------------------------------
+  1  5.97E-06 1.41E+01 5.78E-11 8.26E-12  2186  3001     0     0     0  0.00E+00
+  2  5.97E-06 6.26E-12 5.86E-11 7.13E-22  2186  3001     0     0     0  0.00E+00
+
+  Subcase         2
+  LOAD STEP: 0.8000
+--------------------------------------------------------------------------------
+               Nonlinear Error Measures  Gap and Contact Element Status  Maximum
+ Iter Avg. U    EUI      EPI      EWI    Open Closed Stick Slip Frozen  Plststrn
+--------------------------------------------------------------------------------
+  1  6.82E-06 1.24E+01 5.74E-11 7.17E-12  2186  3001     0     0     0  0.00E+00
+  2  6.82E-06 8.19E-12 5.82E-11 9.05E-22  2186  3001     0     0     0  0.00E+00
+
+  Subcase         2
+  LOAD STEP: 0.9000
+--------------------------------------------------------------------------------
+               Nonlinear Error Measures  Gap and Contact Element Status  Maximum
+ Iter Avg. U    EUI      EPI      EWI    Open Closed Stick Slip Frozen  Plststrn
+--------------------------------------------------------------------------------
+  1  7.68E-06 1.10E+01 5.82E-11 6.46E-12  2186  3001     0     0     0  0.00E+00
+  2  7.68E-06 4.07E-12 5.86E-11 4.61E-22  2186  3001     0     0     0  0.00E+00
+
+  Subcase         2
+  LOAD STEP: 1.0000
+--------------------------------------------------------------------------------
+               Nonlinear Error Measures  Gap and Contact Element Status  Maximum
+ Iter Avg. U    EUI      EPI      EWI    Open Closed Stick Slip Frozen  Plststrn
+--------------------------------------------------------------------------------
+  1  8.53E-06 9.90E+00 5.70E-11 5.70E-12  2186  3001     0     0     0  0.00E+00
+  2  8.53E-06 5.26E-12 5.79E-11 6.01E-22  2186  3001     0     0     0  0.00E+00
+
+	*** Nonlinear solution has converged ***
+
+ (Scratch disk space usage for starting iteration = 832 MB)
+(Running out-of-core solution)
+
+Volume                              =  2.00552E+03   Mass     =  1.58436E-05
+
+
+ Subcase   Compliance 
+       2  4.524136E+02
+
+
+************************************************************************
+
+ ANALYSIS COMPLETED.
+  
+
+************************************************************************
+
+RESOURCE USAGE INFORMATION
+--------------------------
+
+ MAXIMUM MEMORY USED                                       315 MB
+ MAXIMUM DISK SPACE USED                                   875 MB
+
+************************************************************************
+
+
+************************************************************************
+
+COMPUTE TIME INFORMATION
+------------------------
+
+ EXECUTION STARTED                         Tue Jan 28 22:46:24 2014    
+ EXECUTION COMPLETED                       Tue Jan 28 23:00:21 2014    
+ ELAPSED TIME                                         00:13:57
+ CPU TIME                                             00:13:45
+
+************************************************************************
+
+
+                        ***** END OF REPORT *****
+
+ For Useful OptiStruct Tips and Tricks, go to the URL:
+ http://www.altairhyperworks.com/tips.aspx

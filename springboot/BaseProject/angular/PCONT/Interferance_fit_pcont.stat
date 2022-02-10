@@ -1,0 +1,371 @@
+ Program execution started at Tue Jan 28 22:46:24 2014
+ Command line arguments:
+ E:/Interferance_fit_example/PCONT/Interferance_fit_pcont.fem
+ -optskip
+ -aif
+  
+
+TIME SPENT IN MODULE :    READ;   CPU=      0.84;   WALL=      0.84
+
+
+START RUNNING MODULE :  PREPR1 ...
+
+TIME SPENT IN MODULE :  PREPR1;   CPU=      4.49;   WALL=      4.58
+
+
+START RUNNING MODULE :  DESIGN ...
+
+TIME SPENT IN MODULE :  DESIGN;   CPU=      0.00;   WALL=      0.00
+
+
+START RUNNING MODULE :  PREPRO ...
+
+   Start running section :  PRPSL4 ...
+
+   Time spent in section :  PRPSL4;   CPU=      2.20;   WALL=      2.24
+
+
+Request for memory resize from        100 to        315 MB
+Resize ok with new memory.
+
+TIME SPENT IN MODULE :  PREPRO;   CPU=      4.73;   WALL=      8.20
+
+
+ITERATION   0
+
+START RUNNING MODULE : CHECKEL ...
+
+TIME SPENT IN MODULE : CHECKEL;   CPU=      0.31;   WALL=      0.32
+
+
+START RUNNING MODULE :  SOLVER ...
+
+   Start running section :  PRASMB ...
+
+   Time spent in section :  PRASMB;   CPU=      0.00;   WALL=      0.00
+
+
+   Start running section :  SPASMB ...
+
+   Time spent in section :  SPASMB;   CPU=      1.92;   WALL=      2.00
+
+
+   Start running section :NLSTATDR ...
+
+   Solving subcase          2
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     34.38;   WALL=     34.72
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.54;   WALL=      1.54
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     34.90;   WALL=     35.31
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.44;   WALL=      1.45
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     35.07;   WALL=     35.34
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.39;   WALL=      1.43
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     34.90;   WALL=     35.15
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.42;   WALL=      1.43
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     34.77;   WALL=     35.05
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.42;   WALL=      1.44
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     34.91;   WALL=     35.06
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.44;   WALL=      1.42
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     34.69;   WALL=     34.97
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.42;   WALL=      1.43
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     35.07;   WALL=     35.27
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.42;   WALL=      1.43
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     35.69;   WALL=     35.92
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.45;   WALL=      1.45
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     34.77;   WALL=     35.00
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.44;   WALL=      1.44
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     34.88;   WALL=     35.06
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.44;   WALL=      1.43
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     34.77;   WALL=     35.00
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.42;   WALL=      1.43
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     35.23;   WALL=     35.47
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.44;   WALL=      1.45
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     34.77;   WALL=     35.07
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.42;   WALL=      1.43
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     34.77;   WALL=     34.97
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.39;   WALL=      1.44
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     35.21;   WALL=     35.47
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.48;   WALL=      1.56
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     36.29;   WALL=     36.99
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.76;   WALL=      1.76
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     36.24;   WALL=     36.87
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.47;   WALL=      1.49
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     35.72;   WALL=     36.52
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.44;   WALL=      1.44
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     36.19;   WALL=     36.70
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.40;   WALL=      1.51
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     36.58;   WALL=     37.28
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.47;   WALL=      1.47
+
+
+   Start running section :  FCTRIZ ...
+
+   Time spent in section :  FCTRIZ;   CPU=     36.54;   WALL=     37.22
+
+
+   Start running section :  SOLRHS ...
+
+   Time spent in section :  SOLRHS;   CPU=      1.45;   WALL=      1.47
+
+
+   Time spent in section :NLSTATDR;   CPU=      0.86;   WALL=      0.91
+
+
+   Start running section :  STRENR ...
+
+   Time spent in section :  STRENR;   CPU=      1.59;   WALL=      1.59
+
+
+   Start running section :  OBJFUN ...
+
+   Time spent in section :  OBJFUN;   CPU=      0.00;   WALL=      0.00
+
+
+TIME SPENT IN MODULE :  SOLVER;   CPU=    812.69;   WALL=    821.28
+
+
+START RUNNING MODULE :  STRESS ...
+
+TIME SPENT IN MODULE :  STRESS;   CPU=      1.67;   WALL=      1.69
+
+
+START RUNNING MODULE :CONVERGE ...
+
+TIME SPENT IN MODULE :CONVERGE;   CPU=      0.00;   WALL=      0.00
+
+
+START RUNNING MODULE :   PRINT ...
+
+TIME SPENT IN MODULE :   PRINT;   CPU=      0.00;   WALL=      0.00
+
+
+START RUNNING MODULE : RESULTS ...
+
+   Start running section :      HM ...
+
+   Time spent in section :      HM;   CPU=      0.19;   WALL=      0.19
+
+
+   Start running section :     H3D ...
+
+   Time spent in section :     H3D;   CPU=      0.39;   WALL=      0.38
+
+
+   Start running section :    MISC ...
+
+   Time spent in section :    MISC;   CPU=      0.00;   WALL=      0.01
+
+
+ ANALYSIS COMPLETED.
+  
+
+TIME SPENT IN MODULE : RESULTS;   CPU=      0.58;   WALL=      0.89
+
+
+START RUNNING MODULE :FINISHUP ...
+
+TIME SPENT IN MODULE :FINISHUP;   CPU=      0.02;   WALL=      0.00
+
+ Detailed disk usage: 
+	High usage overall   :  875.8 MiB,
+	Solver scratch       :  805.0 MiB,
+	Internal database    :   64.4 MiB,
+	Out-of-core assembly :    0.0 MiB,
+	Temporary files      :    8.0 MiB.
+
+SOLUTION COMPLETED, THE FOLLOWING IS CPU/WALL CLOCK SUMMARY (IN SECONDS):
+
+TOTAL TIME SPENT IN MODULE :READ    ;   CPU=      0.84;   WALL=      0.84
+TOTAL TIME SPENT IN MODULE :PREPR1  ;   CPU=      4.49;   WALL=      4.58
+TOTAL TIME SPENT IN MODULE :DESIGN  ;   CPU=      0.00;   WALL=      0.00
+   Total time spent in section :PRPSL4  ;   CPU=      2.20;   WALL=      2.24
+TOTAL TIME SPENT IN MODULE :PREPRO  ;   CPU=      4.73;   WALL=      8.20
+TOTAL TIME SPENT IN MODULE :CHECKEL ;   CPU=      0.31;   WALL=      0.32
+   Total time spent in section :PRASMB  ;   CPU=      0.00;   WALL=      0.00
+   Total time spent in section :SPASMB  ;   CPU=      1.92;   WALL=      2.00
+   Total time spent in section :FCTRIZ  ;   CPU=    776.35;   WALL=    784.40
+   Total time spent in section :SOLRHS  ;   CPU=     31.93;   WALL=     32.35
+   Total time spent in section :NLSTATDR;   CPU=      0.86;   WALL=      0.91
+   Total time spent in section :STRENR  ;   CPU=      1.59;   WALL=      1.59
+   Total time spent in section :OBJFUN  ;   CPU=      0.00;   WALL=      0.00
+TOTAL TIME SPENT IN MODULE :SOLVER  ;   CPU=    812.69;   WALL=    821.28
+TOTAL TIME SPENT IN MODULE :STRESS  ;   CPU=      1.67;   WALL=      1.69
+TOTAL TIME SPENT IN MODULE :CONVERGE;   CPU=      0.00;   WALL=      0.00
+TOTAL TIME SPENT IN MODULE :PRINT   ;   CPU=      0.00;   WALL=      0.00
+   Total time spent in section :HM      ;   CPU=      0.19;   WALL=      0.19
+   Total time spent in section :H3D     ;   CPU=      0.39;   WALL=      0.38
+   Total time spent in section :MISC    ;   CPU=      0.00;   WALL=      0.01
+TOTAL TIME SPENT IN MODULE :RESULTS ;   CPU=      0.58;   WALL=      0.89
+TOTAL TIME SPENT IN MODULE :FINISHUP;   CPU=      0.02;   WALL=      0.00
+
+CUMULATIVE RUN TIME:     CPU=      825.32;     WALL=      837.81
+
+
+TIME SPENT IN MODULE :   CLOSE;   CPU=      0.00;   WALL=      0.00
+

@@ -1,0 +1,338 @@
+/********************/
+/* GENERAL SETTINGS */
+/********************/
+
+/****
+Created By: Vishal Kalamkar
+Created Date: 04-02-2014
+***/
+
+#menu
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.clear
+{
+    clear: both;
+}
+
+
+/********************/
+/* EXPANDABLE LIST  */
+/********************/
+#listContainer
+{
+    margin-top: 50px;
+}
+
+.expList ul, li
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.expList a
+{
+    margin: 0;
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    display: block;
+    height: 25px;
+    text-decoration: none;
+    line-height: 25px;
+    text-indent: 10px;
+    margin: 2px -10px 3px -5px;
+    color: White;
+    font-size:smaller;
+    font-family:helvetica;
+}
+.expList a:hover
+{
+    margin: 0;
+    width: 100%;
+    display: block;
+    display: block;
+    height: 25px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 25px;
+    margin: 2px -10px 3px -0px;
+    background: #70bf32;
+    background: url('radial-gradient.png') 50% 50% no-repeat;
+    background: radial-gradient(#a1e048, #6a942f);
+    border-radius: 3px;
+}
+
+.expList li
+{
+    line-height: 140%;
+    text-indent: 0px;
+    background-position: 1px 8px;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    margin-left: -20px;
+}
+
+/* Collapsed state for list element */
+.expList .collapsed
+{
+    background-image: url(../Content/images/collapsed.png);
+}
+
+/* Expanded state for list element
+/* NOTE: This class must be located UNDER the collapsed one */
+.expList .expanded
+{
+    background-image: url(../Content/images/expanded.png);
+}
+.expList
+{
+    clear: both;
+    color: white;
+    cursor: pointer;
+    height: 1em;
+    text-indent: 10px;
+    text-decoration: none;
+    line-height: 1.5em;
+    padding: 5px 20px;
+    position: relative;
+    margin-top: 1px;
+}
+
+.listControl
+{
+    margin-bottom: 15px;
+}
+.listControl a
+{
+    border: 1px solid #555555;
+    color: white;
+    cursor: pointer;
+    height: 1.5em;
+    line-height: 1.5em;
+    margin-right: 5px;
+    padding: 4px 10px;
+}
+.listControl a:hover
+{
+    background-color: #555555;
+    color: inherit;
+    font-weight: normal;
+}
+
+
+
+#ScrollToAll
+{
+    height:90%;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    right: 1px;
+}
+
+.LeftgparentHomeMenu
+{
+width: 94%;
+display: block;
+text-decoration: none;
+font-family: helvetica;
+font-size: small;
+font-style: normal;
+font-weight: normal;
+line-height: 25px;
+text-indent: 10px;
+color: #FFF;
+background-color:#E05031;
+cursor: pointer;
+border-radius: 4px;
+margin-top: 2%;  
+margin-left: 3%; 
+}
+
+.LeftgparentHomeMenu:hover
+{
+width: 94%;
+display: block;
+text-decoration: none;
+font-family: helvetica;
+font-size: small;
+font-style: normal;
+font-weight: normal;
+line-height: 25px;
+text-indent: 10px;
+color: #FFF;
+background-color:#E05031;
+cursor: pointer;
+border-radius: 4px;
+margin-top: 2%;
+margin-left: 3%;
+padding-left:3px;
+}
+
+
+.LeftgparentMenu
+{
+    width: 100%;/* change */
+display: block;
+text-decoration: none;
+font-family: helvetica;
+font-size: small;
+font-style: normal;
+font-weight: normal;
+line-height: 25px;
+text-indent: 10px;
+color: #FFF;
+background-color:#132656;
+cursor: pointer;
+border-radius: 4px;
+margin-top: 3%;
+  
+}
+
+.LeftgparentMenu:hover
+{
+    width: 100%;/* change */
+display: block;
+text-decoration: none;
+font-family: helvetica;
+font-size: small;
+font-style: normal;
+font-weight: normal;
+line-height: 25px;
+text-indent: 10px;
+color: #FFF;
+background-color:#132656;
+cursor: pointer;
+border-radius: 4px;
+margin-top: 3%;
+padding-left:3px;
+  
+}
+
+
+.gparentMenu
+{
+    display: block;
+height: 25px;
+text-decoration: none;
+font-style: normal;
+font-weight: normal;
+line-height: 25px;
+text-indent: 10px;
+margin: -10% 0% 10% 0%;
+color: white;
+background-color: #223B4B;
+font-family: helvetica;
+border-radius: 4px;
+width: 100%;
+    
+}
+
+.gparentMenu:hover
+{
+    display: block;
+height: 25px;
+text-decoration: none;
+font-style: normal;
+font-weight: normal;
+line-height: 25px;
+text-indent: 10px;
+margin: -10% 0% 10% 0%;
+color: white;
+background-color: #223B4B;
+font-family: helvetica;
+border-radius: 4px;
+width: 100%;
+padding-left:3px;
+    
+}
+
+
+.parentMenu
+{
+    display: block;
+height: 25px;
+text-decoration: none;
+font-style: normal;
+font-weight: normal;
+line-height: 25px;
+text-indent: 10px;
+border-radius: 3px;
+background-color: #199CCF;
+font-family: helvetica;
+width: 115%;
+margin: -10% 0% 12% -12%;
+}
+
+.parentMenu:hover
+{
+    display: block;
+height: 25px;
+text-decoration: none;
+font-style: normal;
+font-weight: normal;
+line-height: 25px;
+text-indent: 10px;
+border-radius: 3px;
+background-color: #199CCF;
+font-family: helvetica;
+width: 115%;
+margin: -10% 0% 12% -12%;
+}
+
+.ChildMenu
+{
+    margin: -10% 0% 12% -12%;
+width: 114%;
+background-color: #8FC2DD;
+display: block;
+height: 25px;
+text-decoration: none;
+font-style: normal;
+font-weight: normal;
+line-height: 25px;
+text-indent: 10px;
+border-radius: 3px;
+font-family: helvetica;
+}
+
+.ChildMenu:hover
+{
+    margin: -10% 0% 12% -12%;
+width: 114%;
+background-color: #8FC2DD;
+display: block;
+height: 25px;
+text-decoration: none;
+font-style: normal;
+font-weight: normal;
+line-height: 25px;
+text-indent: 15px;
+border-radius: 3px;
+font-family: helvetica;
+}
+
+.ChildMenu:active
+{
+margin: -10% 0% 12% -12%;
+width: 114%;
+background-color: red;
+display: block;
+height: 25px;
+text-decoration: none;
+font-style: normal;
+font-weight: normal;
+line-height: 25px;
+text-indent: 15px;
+border-radius: 3px;
+font-family: helvetica;
+}
+
+

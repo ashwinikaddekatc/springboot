@@ -1,0 +1,65 @@
+<div class="container">
+    <h3 style="text-align: center;"><b>CODE EXTRACTOR ENTRY FORM</b></h3>
+    <!-- Header form start -->
+    <br />
+    <!-- entry form-->
+    <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="clr-row">
+            <div class="clr-col-md-4 clr-col-sm-12">
+                <label for="tech_stack">Technology Stack</label>
+                <select id="tech_stack" formControlName="tech_stack" selecteed="null" class="clr-dropdown">
+                    <option value="null">Choose Technology</option>
+                    <option *ngFor="let ts of tech_stacks" [value]="ts">{{ ts }}
+                    </option>
+                </select>
+            </div>
+
+            <div class="clr-col-md-4 clr-col-sm-12">
+                <label for="object_type">Object Type</label>
+                <select id="object_type" formControlName="object_type" selecteed="null" class="clr-dropdown">
+                    <option value="null">Choose Object Type</option>
+                    <option *ngFor="let ot of object_types" [value]="ot">{{ ot | uppercase }}
+                    </option>
+                </select>
+            </div>
+
+            <div class="clr-col-md-4 clr-col-sm-12">
+                <label for="sub_object_type">Sub Object Type</label>
+                <select id="sub_object_type" formControlName="sub_object_type" selecteed="null" class="clr-dropdown">
+                    <option value="null">Choose Sub Object Type</option>
+                    <option *ngFor="let sot of sub_object_types" [value]="sot">{{ sot | uppercase }}
+                    </option>
+                </select>
+            </div>
+
+            <div class="clr-col-md-4 clr-col-sm-12">
+                <label for="form_type_name">Form Type Name</label>
+                <input id="form_type_name" type="text" formControlName="form_type_name"
+                    placeholder="Enter Form Type Name" class="clr-input">
+            </div>
+
+            <div class="clr-col-md-4 clr-col-sm-12">
+                <label for="std_wf_name">Standard WireFrame Name</label>
+                <input id="std_wf_name" type="text" formControlName="std_wf_name" placeholder="Enter WireFrame Name"
+                    class="clr-input">
+            </div>
+
+            <div class="clr-col-md-4 clr-col-sm-12">
+                <label for="icon_file_name">Icon Name</label>
+                <input id="icon_file_name" type="text" formControlName="icon_file_name" placeholder="Enter Icon Name"
+                    class="clr-input">
+            </div>
+
+            <div class="clr-col-md-4 clr-col-sm-12">
+                <label for="file">Upload Zip File</label>
+                <input  type="file" accept=".zip,.rar,.7zip" (change)="onSelectFile($event)"
+                    placeholder="Upload Zip File" >
+            </div>
+        </div>
+        <br>
+        <div class="center">
+            <button type="submit" class="btn btn-primary" [disabled]="!entryForm.valid">SUBMIT</button>
+        </div>
+    </form>
+</div>
+<!-- </div> -->
