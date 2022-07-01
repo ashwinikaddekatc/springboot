@@ -220,6 +220,8 @@ import { dash_21 } from './pages/dash_21/dash_21.component';
 import { test_24 } from './pages/test_24/test_24.component';
 
 import { entityreporttest } from './pages/entityreporttest/entityreporttest.component';
+import { science } from './pages/science/science.component';
+import { test } from './pages/test/test.component';
 //add_module_import
 
 import { UinameeditComponent } from './pages/wireframe/uinameedit/uinameedit.component';
@@ -235,7 +237,6 @@ import { ganeshtestreport } from "./pages/ganeshtestreport/ganeshtestreport.comp
 import { satyamreporttest } from "./pages/satyamreporttest/satyamreporttest.component";
 import { sktestreport } from "./pages/sktestreport/sktestreport.component";
 import { testreport_17 } from "./pages/testreport_17/testreport_17.component";
-import { test } from "./pages/test/test.component";
 import { test_21 } from "./pages/test_21/test_21.component";
 import { EditWidgetsComponent } from './pages/bi-widgets/edit-widgets/edit-widgets.component';
 import { AbtuisalesnewComponent } from "./pages/Module/sales-new/Abtuisalesnew.component";
@@ -466,6 +467,8 @@ import { ActionbuildermanualComponent } from './pages/actionbuildermanual/action
     servicereport,
 
 entityreporttest,
+science,
+test,
 //add_module
 test_24,
 test,

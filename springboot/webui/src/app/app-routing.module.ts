@@ -175,7 +175,6 @@ import { satyamreporttest } from './pages/satyamreporttest/satyamreporttest.comp
 import { satyamtest } from './pages/satyamtest/satyamtest.component';
 import { sktestreport } from './pages/sktestreport/sktestreport.component';
 import { testreport_17 } from './pages/testreport_17/testreport_17.component';
-import { test } from './pages/test/test.component';
 import { test_19 } from './pages/test_19/test_19.component';
 import { test_21 } from './pages/test_21/test_21.component';
 
@@ -183,6 +182,8 @@ import { dash_21 } from './pages/dash_21/dash_21.component';
 import { EditWidgetsComponent } from './pages/bi-widgets/edit-widgets/edit-widgets.component';
 import { test_24 } from './pages/test_24/test_24.component';
 import { entityreporttest } from './pages/entityreporttest/entityreporttest.component';
+import { science } from './pages/science/science.component';
+import { test } from './pages/test/test.component';
 //add_import
 
 import { AbtuisalesnewComponent } from './pages/Module/sales-new/Abtuisalesnew.component';
@@ -397,8 +398,8 @@ export const routes: Routes = [
         ],
       },
       // DYNAMIC FORM SETUP END
-    
-     
+
+
       // DYNAMIC FORMS START
       {
         path: 'dynamic-form-test1',
@@ -677,7 +678,8 @@ export const routes: Routes = [
                     { path: 'edit/:id'   , component: entityreportedit },
                     { path: 'entityreporttest'   , component:  entityreporttest},
                     {path:'servicereport' , component:servicereport},
-//add_routingreportentity
+{ path: 'science'   , component:  science},
+//add_routingreport
                   ]
                 },
 
@@ -704,10 +706,11 @@ export const routes: Routes = [
 
 { path: 'test_24'   , component:  test_24},
 
+{ path: 'science'   , component:  science},
 //add_routingreport
                   ]
                 },
-                
+
                 // wireframe end
                 {
                   path:'bi-widgets' , component: BiWidgetsComponent,
@@ -731,7 +734,7 @@ export const routes: Routes = [
                 { path: 'dash_21'   , component:  dash_21},
 //add_routing
 
-                  
+
 
                   { path: 'edit-dash/:id'   , component: EditDashComponent,
                   children:[
@@ -739,12 +742,12 @@ export const routes: Routes = [
                   { path: 'add-defination'   , component: AddDefinationComponent}]},
                   { path: 'add-def/:id'   , component: AddDefinationComponent},
                   { path: 'update-modal/:id/:name',component:UpdateWidgetModalComponent}
-                  
+
                  ]
                 }
               ]
             }
-          ] 
+          ]
         }, // project setup end
 
         {
@@ -781,18 +784,18 @@ export const routes: Routes = [
           },
         ],
       },
-      
+
     // Action Builder END
- 
+
 
     ],
   },
-  /* { // this will be real structure of profile settings 
+  /* { // this will be real structure of profile settings
     path: 'profile-settings',
     component: UserProfileSettingsComponent,
     canActivate:[AuthGuard],
     children:[  // Children paths are appended to the parent path
-        { path: '', redirectTo: '/profile', pathMatch: 'full', data:[{selectedHeaderItemIndex:1, selectedSubNavItemIndex:-1}] }, 
+        { path: '', redirectTo: '/profile', pathMatch: 'full', data:[{selectedHeaderItemIndex:1, selectedSubNavItemIndex:-1}] },
         { path     : 'profile', component: ProfileComponent, data     : [{selectedHeaderItemIndex:0, selectedSubNavItemIndex:-1}]},
         { path: 'notifications'   , component: NotificationComponent     , data:[{selectedHeaderItemIndex:0, selectedSubNavItemIndex:0}]  },
         { path: 'accounts' , component: AccountsComponent   , data:[{selectedHeaderItemIndex:0, selectedSubNavItemIndex:1}]  }
@@ -800,7 +803,7 @@ export const routes: Routes = [
   }, */
   //{ path: 'profile-settings' , component: UserProfileSettingsComponent , canActivate:[AuthGuard] },
   //{ path: '', redirectTo: '/create-account', pathMatch: 'full' },
- 
+
   {
     path: 'create-account',
     component: UserRegistrationComponent,
