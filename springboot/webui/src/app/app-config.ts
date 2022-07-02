@@ -15,8 +15,8 @@ export class AppConfig {
     // API Related configs
 
     // public apiPort:string = "9119";
-//     public apiPort:string = "9191";
-    public apiPort:string = "32166";
+    public apiPort:string = "9191";
+//     public apiPort:string = "32166";
     public apiProtocol:string;
     public apiHostName:string;
     public baseApiPath:string;
